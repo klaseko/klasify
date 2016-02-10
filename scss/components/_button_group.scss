@@ -1,0 +1,51 @@
+.btn-group,
+.button-group {
+  float: left;
+  margin: 5px;
+}
+
+.btn-group button,
+.button-group button {
+  border-radius: 0;
+  border:1px solid #019997;
+  border-right: 0;
+  margin:0;
+}
+
+.btn-group button:hover,
+.button-group button:hover {
+  background: #2ABBB3;
+}
+
+.btn-group button:nth-child(1),
+.button-group button:nth-child(1) {
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+
+}
+
+.btn-group button:nth-last-child(1),
+.button-group button:nth-last-child(1) {
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-right:1px solid #019997;
+}
+
+.btn-group button.active,
+.button-group button.active {
+  background: #019997;
+  -webkit-box-shadow: inset 0px 6px 10px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: inset 0px 6px 10px 0px rgba(0,0,0,0.3);
+  box-shadow: inset 0px 6px 10px 0px rgba(0,0,0,0.3);
+}
+
+.btn-group button[disabled],
+.button-group button[disabled],
+.btn-group button[disabled]:hover,
+.button-group button[disabled]:hover,
+.btn-group button[disabled]:active,
+.button-group button[disabled]:active {
+  background: #ccc;
+  border-color: #ddd;
+  cursor:not-allowed;
+}

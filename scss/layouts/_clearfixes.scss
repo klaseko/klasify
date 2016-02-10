@@ -1,0 +1,40 @@
+.clear {
+  width:100%;
+  float:left;
+}
+
+.clear-10 {
+  width:100%;
+  height:10px;
+  float:left;
+}
+
+.clear-20 {
+  width:100%;
+  height:20px;
+  float:left;
+}
+
+.clear-50 {
+  width:100%;
+  height:50px;
+  float:left;
+}
+
+.clear-100 {
+  width:100%;
+  height:100px;
+  float:left;
+}
+
+.clear-2p {
+  width:100%;
+  height:2%;
+}
+
+.clear-line {
+  width:100%;
+  height:1px;
+  float:left;
+  background:$gray-medium;
+}

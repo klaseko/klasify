@@ -1,0 +1,37 @@
+.accordion {
+
+  float:left;
+  width:100%;
+
+  dt:nth-child(2) {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+
+  dt {
+    background:#019997;
+    margin-bottom: 1px;
+  }
+
+  dt, dd {
+    padding:2%;
+    margin-left:0;
+    float:left;
+    width:96%;
+  }
+
+  a {
+    display: block;
+    color:white;
+  }
+
+  a:hover {
+    border:0;
+    font-weight:900;
+  }
+
+  dd {
+    background:white !important;
+    border-top: 0;
+  }
+}

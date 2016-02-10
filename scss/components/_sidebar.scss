@@ -1,0 +1,79 @@
+#sidebar {
+  position:fixed;
+  width: 15%;
+  height:100%;
+  background: $blue-navy;
+  margin-top: 50px;
+  padding-top: 15px;
+
+  .menu-item {
+    padding: 23px 15px 38px;
+    border-bottom: 1px solid #3A475A;
+    color: rgb(230,230,230);
+
+    a {
+      color: rgb(230,230,230);
+    }
+
+    i {
+      width: 10%;
+      float: left;
+    }
+
+    p {
+      width:85%;
+      font-weight: 400;
+      margin-left: 5%;
+      margin-top: 0;
+      float: left;
+    }
+  }
+
+  .menu-item:hover {
+    background: #2D94C5;
+    cursor: pointer;
+    color:white;
+  }
+
+  .active {
+    background: #217DA9;
+    color:white;
+  }
+
+  #super_admin, #school_admin {
+    display: none;
+  }
+
+  #school_staff {
+    display: block;
+  }
+
+  #footer {
+    padding:15px;
+    position: absolute;
+    bottom: 65px;
+
+    p {
+      color: rgb(230,230,230);
+      font-size: 12px;
+
+      a {
+        border: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  #sidebar {
+    width: calc(50% + 87px);
+    margin-left: -100%;
+    transition: margin 0.3s;
+
+    .toggle {
+      margin-left: 0%;
+      transition: margin 0.2s;
+    }
+  }
+
+}

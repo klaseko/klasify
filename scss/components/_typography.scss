@@ -1,0 +1,73 @@
+/* Fonts Styles */
+/* Roboto Thin, Light, Normal, Medium, Bold, Italic (all) */
+@import url(https://fonts.googleapis.com/css?family=Roboto:500,400italic,100,700italic,300,700,500italic,100italic,300italic,400);
+
+/* Oswald Light, Normal, Bold */
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.font-oswald {
+  font-family: 'Oswald', sans-serif !important
+}
+
+.instructions {
+  font-size: 18px !important;
+  font-weight: 300;
+}
+
+.lead {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-size:18px;
+  font-weight: 300;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.font-thin {
+  font-weight: 100 !important;
+}
+
+.font-light {
+  font-weight: 300 !important;
+}
+
+.font-medium {
+  font-weight: 500 !important;
+}
+
+.font-bold {
+  font-weight: 900 !important;
+}
+
+.text-small {
+  font-size: .8em !important;
+}
