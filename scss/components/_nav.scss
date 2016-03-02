@@ -1,0 +1,56 @@
+#nav {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  background: url() left center no-repeat #FFF;
+  background-size: 35px;
+  background-position: 8px 8px;
+  border-bottom: 1px solid rgb(220, 220, 220);
+  padding-left: 49px;
+  box-shadow: 3px 3px 3px rgba(35, 35, 35, 0.05);
+
+  .logo {
+    padding: 17px 0px 15px 0px;
+    width: calc(15% - 50px);
+    float:left;
+
+    font-weight: 400;
+    color: #2981B0;
+    font-size: 18px;
+
+    border-right: 1px solid #EAEAEA;
+
+    @media screen and (max-width: $screen-mobile-max) {
+      width: 3px;
+      padding: 25px 0px;
+      border-right: 1px solid #EAEAEA;
+      transition: 0.5s;
+    }
+  }
+
+  .current-page {
+    float:left;
+    width: 50%;
+    padding: 18px 17px 16px;
+
+    color: #2981B0;
+    font-size: 16px;
+  }
+
+  .user {
+    border-left: 1px solid #EAEAEA;
+    width: calc(35% - 34px);
+    float: left;
+    padding: 18px 17px 16px;
+  }
+
+  .show-border-shadow {
+    border-bottom: 1px solid rgb(220, 220, 220);
+    box-shadow: 3px 3px 3px rgba(35, 35, 35, 0.05);
+  }
+
+  .hide-border-shadow {
+    border-bottom: none;
+    box-shadow: none;
+  }
+}

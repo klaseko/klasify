@@ -1,0 +1,125 @@
+.full-width{
+  width: 100%;
+}
+.col-flex {
+  margin:auto;
+}
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  float:left;
+}
+.col-12 {
+  width:98%;
+  padding: 1%;
+}
+.col-11 {
+  width:89.666667%;
+  padding: 1%;
+}
+.col-10 {
+  width:81.333333%;
+  padding: 1%;
+}
+.col-9 {
+  width:73%;
+  padding: 1%;
+}
+.col-8 {
+  width:64.666667%;
+  padding: 1%;
+}
+.col-7 {
+  width:56.333333%;
+  padding: 1%;
+}
+.col-6 {
+  width:48%;
+  padding: 1%;
+}
+.col-5 {
+  width:39.666667%;
+  padding: 1%;
+}
+.col-4 {
+  width:31.333333%;
+  padding: 1%;
+}
+.col-3 {
+  width:23%;
+  padding: 1%;
+}
+.col-2 {
+  width:14.666667%;
+  padding: 1%;
+}
+.col-1 {
+  width:6.333333%;
+  padding: 1%;
+}
+
+@media only screen and (max-width: $screen-mobile-max) {
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-11,
+  .col-12 {
+    width:98%;
+    padding:1%;
+  }
+  .col-12.no-collapse {
+    width:94%;
+  }
+  .col-11.no-collapse {
+    width:89.666667%;
+  }
+  .col-10.no-collapse {
+    width:81.333333%;
+  }
+  .col-9.no-collapse {
+    width:73%;
+  }
+  .col-8.no-collapse {
+    width:64.66667%;
+  }
+  .col-7.no-collapse {
+    width:56.333333%;
+  }
+  .col-6.no-collapse {
+    width:48%;
+  }
+  .col-5.no-collapse {
+    width:39.666667%;
+  }
+  .col-4.no-collapse {
+    width:31.333333%;
+  }
+  .col-3.no-collapse {
+    width:23%;
+  }
+  .col-2.no-collapse {
+    width:14.666667%;
+  }
+  .col-1.no-collapse {
+    width:6.333333%;
+  }
+  .full-width{
+    width: 100%;
+  }
+}

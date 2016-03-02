@@ -1,0 +1,53 @@
+.mobile-only {
+  display:none;
+
+  @media (max-width: $screen-mobile-max) {
+    display: block;
+  }
+}
+
+.desktop-only {
+  display: block;
+
+  @media (max-width: $screen-mobile-max) {
+    display: none;
+  }
+}
+
+@media print {
+  nav,
+  header,
+  footer,
+  .box-feedback {
+    display: none;
+  }
+
+  .no-print {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .col-4-date-select.no-collapse {
+    width:31.333333%;
+  }
+
+  .display-gt-767 {
+    display: none;
+  }
+
+  .display-lt-767 {
+    display: block;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .display-gt-767 {
+    display: block;
+  }
+
+  .display-lt-767 {
+    display: none;
+  }
+}

@@ -1,0 +1,80 @@
+/* Foregrounds Classes */
+/* --------------------------------------------------------------------------- */
+.color-white {
+  color: $white !important;
+}
+
+.color-dark-blue {
+  color: $brand-blue-dark !important;
+}
+
+.color-teal {
+  color: $teal-base !important;
+}
+
+.color-light-teal {
+  color: $teal-light !important;
+}
+
+.color-corporate-blue {
+  color: $brand-blue-base !important;
+}
+
+.color-yellow {
+  color: $yellow-base !important;
+}
+
+.color-orange {
+  color: $orange-base !important;
+}
+
+.color-red {
+  color: $red-base !important;
+}
+
+.color-black {
+  color: $black !important;
+}
+
+a.color-white:hover {
+  color: $gray-light;
+  border-bottom: 1px dashed $gray-lighter;
+}
+
+/* Background Classes */
+/* --------------------------------------------------------------------------- */
+.bg-dark-blue {
+  background: $brand-blue-dark !important;
+}
+
+.bg-teal {
+  background: $teal-base !important;
+}
+
+.bg-light-teal {
+  background: $teal-light !important;
+}
+
+.bg-corporate-blue {
+  background: $brand-blue-base !important;
+}
+
+.bg-yellow {
+  background: $yellow-base !important;
+}
+
+.bg-orange {
+  background: $orange-base !important;
+}
+
+.bg-grey-240 {
+  background: $gray-lighter;
+}
+
+.bg-grey-230 {
+  background: $gray-light;
+}
+
+.bg-white {
+  background: $white !important;
+}
