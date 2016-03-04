@@ -1,0 +1,27 @@
+.no-border {
+  border:0 !important;
+}
+
+.no-border-radius {
+  border-radius: 0 !important;
+}
+
+.border-bottom {
+  border-bottom: 1px solid rgb(210, 210, 210);
+}
+
+.border-bottom:last-of-type {
+  border-bottom: 0px
+}
+
+.border-radius-5 {
+  border-radius: 5px !important;
+}
+
+.border-radius-10 {
+  border-radius: 10px !important;
+}
+
+.border-radius-15 {
+  border-radius: 15px !important;
+}

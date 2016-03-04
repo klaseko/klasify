@@ -1,0 +1,247 @@
+html, body {
+  font-family: 'Roboto', sans-serif;
+  font-size:14px;
+}
+
+/* default global header font is Oswald */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  margin-top:.5em;
+  margin-bottom: 0;
+}
+
+/* default global font is Roboto */
+p, u, input, label, textarea, button, select, ul, li, table, th, tr, td {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.428;
+}
+
+span {
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+li {
+  margin-left: 4% !important;
+}
+
+a {
+  text-decoration: none;
+  color:#2ABBB3;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+a:hover {
+  // border-bottom: 1px dashed #019997;
+  text-decoration: none;
+  color: #019997;
+}
+
+a:active {
+  color:#019997;
+}
+
+h1, .h1 {
+  font-size: 36px !important;
+}
+
+h2, .h2 {
+  font-size: 30px !important;
+}
+
+h3, .h3 {
+  font-size: 24px !important;
+}
+
+h4, .h4 {
+  font-size: 18px !important;
+}
+
+h5, .h5 {
+  font-size: 14px !important;
+}
+
+h6, .h6 {
+  font-size: 12px !important;
+}
+
+small, .small {
+  color:rgb(120,120,120);
+  font-family: 'Roboto';
+}
+
+mark, .mark {
+  background:#2ABBB3;
+}
+
+em {
+  font-style: italic;
+}
+
+strong, .strong {
+  font-weight: 700;
+}
+
+code {
+  font-family: 'Consolas', 'Source Code Pro';
+  font-size: 14px;
+  background: #fff4f8;
+  padding:2;
+  margin:2;
+  color:#d42e64;
+  border-radius: 2;
+}
+
+svg {
+  height:100% !important;
+  float:left;
+}
+
+/* Form Inputs */
+label {
+  width:94%;
+  margin:3% 0 1% 0;
+  float:left;
+  font-weight: 500;
+}
+
+input, textarea, select {
+  width:96%;
+  float:left;
+  margin:1% 0 3% 0;
+  padding:7px 2%;
+  border:1px solid rgb(230,230,230);
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+select {
+  width:100%;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: 0;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(42, 187, 179, 0.55);
+  -moz-box-shadow:    0px 0px 10px 0px rgba(42, 187, 179, 0.55);
+  box-shadow:         0px 0px 10px 0px rgba(42, 187, 179, 0.55);
+}
+
+input[type="checkbox"], input[type="radio"] {
+  padding:0;
+  border:1px;
+  width:auto;
+  margin:3px 5px;
+}
+
+input[type="radio"]:focus {
+  outline: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow:    none;
+  box-shadow:         none;
+}
+
+input[disabled],
+input[disabled]:hover,
+input[disabled]:active
+{
+    background: #ccc;
+    border-color: #ddd;
+    cursor:not-allowed;
+}
+
+/* Tables */
+table.table {
+  border-spacing: 0;
+  width:100%;
+}
+
+th, td {
+  padding:7px;
+  border-bottom: 1px solid rgb(210, 210, 210);
+  margin-left: 50px;
+}
+
+th {
+  font-weight: 500;
+  text-align: left;
+}
+
+td {
+
+}
+
+/* Buttons */
+button, .button {
+  background: #2ABBB3;
+  float:left;
+  margin: 1% 0 3% 0;
+  padding:7px;
+  border:1px solid #2ABBB3;
+  border-radius: 5px;
+  font-size: 14px;
+  color:white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #019997;
+}
+
+button:active {
+  background: #18727A;
+}
+
+button.active {
+  background: #18727A;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(42, 187, 179, 0.75);
+  -moz-box-shadow:    0px 0px 10px 0px rgba(42, 187, 179, 0.75);
+  box-shadow:         0px 0px 10px 0px rgba(42, 187, 179, 0.75);
+
+}
+
+button:focus {
+  outline: 0;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(42, 187, 179, 0.75);
+  -moz-box-shadow:    0px 0px 10px 0px rgba(42, 187, 179, 0.75);
+  box-shadow:         0px 0px 10px 0px rgba(42, 187, 179, 0.75);
+
+}
+
+button[disabled],
+button[disabled]:hover,
+button[disabled]:active
+{
+    background: #ccc;
+    border-color: #ddd;
+    cursor:not-allowed;
+}
+
+
+/* Mobile */
+@media (min-width: 320px) {
+  input, textarea, select {
+    margin:0;
+  }
+
+  select {
+    width:100%;
+  }
+
+  table.table {
+    width:auto;
+  }
+
+  th, td {
+    padding:7px;
+    min-width: 120px;
+    padding-right: 20px;
+    border-bottom: 1px solid rgb(210, 210, 210);
+  }
+}
