@@ -5,15 +5,14 @@
   background: $blue-navy;
   margin-top: 50px;
   padding-top: 15px;
+  z-index: 5;
 
   .menu-item {
-    padding: 23px 15px 38px;
+    width: calc(100% - 30px);
+    padding: 25px 15px 5px 15px;
     border-bottom: 1px solid #3A475A;
     color: rgb(230,230,230);
-
-    a {
-      color: rgb(230,230,230);
-    }
+    float: left;
 
     i {
       width: 10%;
@@ -40,14 +39,6 @@
     color:white;
   }
 
-  #super_admin, #school_admin {
-    display: none;
-  }
-
-  #school_staff {
-    display: block;
-  }
-
   #footer {
     padding:15px;
     position: absolute;
@@ -67,13 +58,12 @@
 @media screen and (max-width: 920px) {
   #sidebar {
     width: calc(50% + 87px);
+    transition: margin 0.2s;
     margin-left: -100%;
-    transition: margin 0.3s;
-
-    .toggle {
-      margin-left: 0%;
-      transition: margin 0.2s;
-    }
   }
 
+  .toggle {
+    margin-left: 0% !important;
+    transition: margin 0.2s;
+  }
 }
