@@ -1,47 +1,51 @@
 #nav {
-  height: 50px;
+  height: 48px;
   width: 100%;
   position: fixed;
-  background: url() left center no-repeat #FFF;
-  background-size: 35px;
-  background-position: 8px 8px;
   border-bottom: 1px solid rgb(220, 220, 220);
-  padding-left: 49px;
   box-shadow: 3px 3px 3px rgba(35, 35, 35, 0.05);
+  z-index:5;
+  background: white;
 
-  .logo {
-    padding: 17px 0px 15px 0px;
-    width: calc(15% - 50px);
-    float:left;
+  #logo {
+    width: calc(15% - 8px);
+    height: 35px;
+    float: left;
 
+    padding: 8px 0px;
+    margin-left: 8px;
+
+    // background: url("../images/klaseko-logo.png") left center no-repeat;
+    background-size: auto 70%;
+
+    font-size: 18px;
     font-weight: 400;
     color: #2981B0;
-    font-size: 18px;
 
     border-right: 1px solid #EAEAEA;
 
     @media screen and (max-width: $screen-mobile-max) {
-      width: 3px;
-      padding: 25px 0px;
-      border-right: 1px solid #EAEAEA;
-      transition: 0.5s;
+      width: 41px;
     }
   }
 
-  .current-page {
+  .login {
+    border-right: 0 !important;
+  }
+
+  #current-page {
     float:left;
-    width: 50%;
+    width: 70%;
     padding: 18px 17px 16px;
 
     color: #2981B0;
     font-size: 16px;
   }
 
-  .user {
-    border-left: 1px solid #EAEAEA;
-    width: calc(35% - 34px);
-    float: left;
+  #user {
+    width: calc(15% - 100px);
     padding: 18px 17px 16px;
+    float:left;
   }
 
   .show-border-shadow {
