@@ -12,6 +12,20 @@
 }
 
 .row {
-  width:100%;
+  width:99.8%;
   float:left;
+}
+
+.table-container {
+  width:100%;
+  height:auto;
+  float:left;
+}
+
+.table-container:nth-child(even) {
+  background: rgb(250,250,250)
+}
+
+#filters{
+  display: none;
 }
