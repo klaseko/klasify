@@ -13,10 +13,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/borbefg/klasify.git"
+    "url": "https://github.com/klaseko/klasify.git"
   },
   "keywords": [],
-  "homepage": "https://github.com/borbefg/klasify",
+  "homepage": "https://github.com/klaseko/klasify",
   "dependencies": {},
   "devDependencies": {},
   "license": "MIT",
@@ -37,7 +37,7 @@
     "tag": "0.0.2",
     "commit": "7ffad1024b0d4f04b1b92d31b6baa44ef2c4f009"
   },
-  "_source": "git://github.com/borbefg/klasify.git",
+  "_source": "git://github.com/klaseko/klasify.git",
   "_target": "~0.0.1",
   "_originalSource": "klasify"
 }
