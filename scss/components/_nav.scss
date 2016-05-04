@@ -8,15 +8,13 @@
   background: white;
 
   #logo {
-    width: calc(15% - 8px);
+    width: 15%;
     height: 35px;
     float: left;
 
-    padding: 8px 0px;
-    margin-left: 8px;
-
-    // background: url("../images/klaseko-logo.png") left center no-repeat;
-    background-size: auto 70%;
+    background-image: url("../images/klaseko-logo.png");
+    background-size: auto 90%;
+    background-position: center center;
 
     font-size: 18px;
     font-weight: 400;
