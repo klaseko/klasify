@@ -1,7 +1,7 @@
 .mobile-only {
   display:none;
 
-  @media (max-width: $screen-mobile-max) {
+  @media (max-width: $screen-tablet-min) {
     display: block;
   }
 }
@@ -9,7 +9,7 @@
 .desktop-only {
   display: block;
 
-  @media (max-width: $screen-mobile-max) {
+  @media (max-width: $screen-tablet-min) {
     display: none;
   }
 }
@@ -51,3 +51,4 @@
     display: none;
   }
 }
+
