@@ -67,3 +67,20 @@
   -moz-box-shadow:    0px 0px 10px 0px #f08e1c;
   box-shadow:         0px 0px 10px 0px #f08e1c;
 }
+
+.button-text {
+  float: left;
+  width:73%;
+  padding: 1%;
+}
+
+.button-icon {
+  float: left;
+  width:23%;
+  padding: 1%;
+}
+
+
+@media only screen and (max-width: $screen-tablet-min) {
+  .button-text { display: none; }
+}

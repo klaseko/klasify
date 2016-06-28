@@ -39,12 +39,12 @@ a {
 }
 
 a:hover {
-  // border-bottom: 1px dashed #019997;
-  text-decoration: none;
+  text-decoration: underline;
   color: #019997;
 }
 
 a:active {
+  text-decoration: underline;
   color:#019997;
 }
 
