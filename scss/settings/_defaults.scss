@@ -106,9 +106,9 @@ svg {
 
 /* Form Inputs */
 label {
-  width:94%;
-  margin:3% 0 1% 0;
-  float:left;
+  width: calc(100% - 2px);
+  margin: 5px 1px 2px 1px;
+  float: left;
   font-weight: 500;
 }
 
