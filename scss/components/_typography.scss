@@ -71,3 +71,8 @@
 .text-small {
   font-size: .9em !important;
 }
+
+.ellipsis-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
