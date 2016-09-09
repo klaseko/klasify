@@ -1,8 +1,10 @@
-input,select,textarea {
+form.ng-pristine {
   .ng-pristine {
     border:1px solid rgb(230,230,230) !important;
   }
+}
 
+form.ng-dirty {
   .ng-dirty.ng-invalid {
     border:1px solid rgba(255, 0, 0, 0.45) !important;
     box-shadow: none;
