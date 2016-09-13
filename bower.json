@@ -21,7 +21,7 @@
   "devDependencies": {},
   "license": "MIT",
   "main": [
-    "scss/klasify.scss",
+    "stylesheet/klasify.css",
     "js/klasify.js"
   ],
   "ignore": [
