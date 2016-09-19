@@ -1,20 +1,19 @@
+/* Roboto */
+@import "https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i";
 /* Settings */
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import url(https://fonts.googleapis.com/css?family=Roboto:500,400italic,100,700italic,300,700,500italic,100italic,300italic,400);
-@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
-/* line 9, ../sass/settings/_normalize.scss */
+/* line 1, ../sass/settings/_normalize.sass */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 19, ../sass/settings/_normalize.scss */
+/* line 6, ../sass/settings/_normalize.sass */
 body {
   margin: 0;
 }
 
-/* line 33, ../sass/settings/_normalize.scss */
+/* line 9, ../sass/settings/_normalize.sass */
 article,
 aside,
 details,
@@ -23,15 +22,12 @@ figure,
 footer,
 header,
 hgroup,
-main,
-menu,
 nav,
-section,
-summary {
+section {
   display: block;
 }
 
-/* line 54, ../sass/settings/_normalize.scss */
+/* line 21, ../sass/settings/_normalize.sass */
 audio,
 canvas,
 progress,
@@ -40,63 +36,63 @@ video {
   vertical-align: baseline;
 }
 
-/* line 67, ../sass/settings/_normalize.scss */
+/* line 28, ../sass/settings/_normalize.sass */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
-/* line 77, ../sass/settings/_normalize.scss */
+/* line 37, ../sass/settings/_normalize.sass */
 [hidden],
 template {
   display: none;
 }
 
-/* line 89, ../sass/settings/_normalize.scss */
+/* line 49, ../sass/settings/_normalize.sass */
 a {
   background-color: transparent;
 }
 
-/* line 98, ../sass/settings/_normalize.scss */
+/* line 58, ../sass/settings/_normalize.sass */
 a:active,
 a:hover {
   outline: 0;
 }
 
-/* line 110, ../sass/settings/_normalize.scss */
+/* line 70, ../sass/settings/_normalize.sass */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 118, ../sass/settings/_normalize.scss */
+/* line 78, ../sass/settings/_normalize.sass */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 127, ../sass/settings/_normalize.scss */
+/* line 87, ../sass/settings/_normalize.sass */
 dfn {
   font-style: italic;
 }
 
-/* line 136, ../sass/settings/_normalize.scss */
+/* line 96, ../sass/settings/_normalize.sass */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-/* line 145, ../sass/settings/_normalize.scss */
+/* line 105, ../sass/settings/_normalize.sass */
 mark {
   background: #ff0;
   color: #000;
 }
 
-/* line 154, ../sass/settings/_normalize.scss */
+/* line 114, ../sass/settings/_normalize.sass */
 small {
   font-size: 80%;
 }
 
-/* line 162, ../sass/settings/_normalize.scss */
+/* line 122, ../sass/settings/_normalize.sass */
 sub,
 sup {
   font-size: 75%;
@@ -105,43 +101,43 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 170, ../sass/settings/_normalize.scss */
+/* line 130, ../sass/settings/_normalize.sass */
 sup {
   top: -0.5em;
 }
 
-/* line 174, ../sass/settings/_normalize.scss */
+/* line 134, ../sass/settings/_normalize.sass */
 sub {
   bottom: -0.25em;
 }
 
-/* line 185, ../sass/settings/_normalize.scss */
+/* line 145, ../sass/settings/_normalize.sass */
 img {
   border: 0;
 }
 
-/* line 193, ../sass/settings/_normalize.scss */
+/* line 153, ../sass/settings/_normalize.sass */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 204, ../sass/settings/_normalize.scss */
+/* line 164, ../sass/settings/_normalize.sass */
 figure {
   margin: 1em 40px;
 }
 
-/* line 212, ../sass/settings/_normalize.scss */
+/* line 172, ../sass/settings/_normalize.sass */
 hr {
   box-sizing: content-box;
   height: 0;
 }
 
-/* line 221, ../sass/settings/_normalize.scss */
+/* line 181, ../sass/settings/_normalize.sass */
 pre {
   overflow: auto;
 }
 
-/* line 229, ../sass/settings/_normalize.scss */
+/* line 189, ../sass/settings/_normalize.sass */
 code,
 kbd,
 pre,
@@ -150,7 +146,7 @@ samp {
   font-size: 1em;
 }
 
-/* line 252, ../sass/settings/_normalize.scss */
+/* line 212, ../sass/settings/_normalize.sass */
 button,
 input,
 optgroup,
@@ -161,99 +157,97 @@ textarea {
   margin: 0;
 }
 
-/* line 266, ../sass/settings/_normalize.scss */
+/* line 226, ../sass/settings/_normalize.sass */
 button {
   overflow: visible;
 }
 
-/* line 277, ../sass/settings/_normalize.scss */
+/* line 237, ../sass/settings/_normalize.sass */
 button,
 select {
   text-transform: none;
 }
 
-/* line 290, ../sass/settings/_normalize.scss */
-button,
-html input[type="button"],
+/* line 252, ../sass/settings/_normalize.sass */
 input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
 }
 
-/* line 302, ../sass/settings/_normalize.scss */
+/* line 262, ../sass/settings/_normalize.sass */
 button[disabled],
 html input[disabled] {
   cursor: default;
 }
 
-/* line 311, ../sass/settings/_normalize.scss */
+/* line 271, ../sass/settings/_normalize.sass */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 322, ../sass/settings/_normalize.scss */
+/* line 282, ../sass/settings/_normalize.sass */
 input {
   line-height: normal;
 }
 
-/* line 334, ../sass/settings/_normalize.scss */
+/* line 294, ../sass/settings/_normalize.sass */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
 
-/* line 346, ../sass/settings/_normalize.scss */
+/* line 306, ../sass/settings/_normalize.sass */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
-/* line 356, ../sass/settings/_normalize.scss */
+/* line 316, ../sass/settings/_normalize.sass */
 input[type="search"] {
   -webkit-appearance: textfield;
   box-sizing: content-box;
 }
 
-/* line 367, ../sass/settings/_normalize.scss */
+/* line 327, ../sass/settings/_normalize.sass */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 376, ../sass/settings/_normalize.scss */
+/* line 336, ../sass/settings/_normalize.sass */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
 
-/* line 387, ../sass/settings/_normalize.scss */
+/* line 347, ../sass/settings/_normalize.sass */
 legend {
   border: 0;
   padding: 0;
 }
 
-/* line 396, ../sass/settings/_normalize.scss */
+/* line 356, ../sass/settings/_normalize.sass */
 textarea {
   overflow: auto;
 }
 
-/* line 405, ../sass/settings/_normalize.scss */
+/* line 365, ../sass/settings/_normalize.sass */
 optgroup {
   font-weight: bold;
 }
 
-/* line 416, ../sass/settings/_normalize.scss */
+/* line 376, ../sass/settings/_normalize.sass */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 421, ../sass/settings/_normalize.scss */
+/* line 381, ../sass/settings/_normalize.sass */
 td,
 th {
   padding: 0;
@@ -1676,92 +1670,85 @@ label.error {
 }
 
 /* Fonts Styles */
-/* Roboto Thin, Light, Normal, Medium, Bold, Italic (all) */
-/* Oswald Light, Normal, Bold */
-/* line 8, ../sass/components/_typography.scss */
+/* line 2, ../sass/components/_typography.scss */
 .font-roboto {
   font-family: 'Roboto', sans-serif !important;
 }
 
-/* line 12, ../sass/components/_typography.scss */
-.font-oswald {
-  font-family: "Oswald", sans-serif !important;
-}
-
-/* line 16, ../sass/components/_typography.scss */
+/* line 6, ../sass/components/_typography.scss */
 .instructions {
   font-size: 18px !important;
   font-weight: 300;
 }
 
-/* line 21, ../sass/components/_typography.scss */
+/* line 11, ../sass/components/_typography.scss */
 .lead {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 18px;
   font-weight: 300;
 }
 
-/* line 27, ../sass/components/_typography.scss */
+/* line 17, ../sass/components/_typography.scss */
 .text-left {
   text-align: left !important;
 }
 
-/* line 31, ../sass/components/_typography.scss */
+/* line 21, ../sass/components/_typography.scss */
 .text-center {
   text-align: center !important;
 }
 
-/* line 35, ../sass/components/_typography.scss */
+/* line 25, ../sass/components/_typography.scss */
 .text-right {
   text-align: right !important;
 }
 
-/* line 39, ../sass/components/_typography.scss */
+/* line 29, ../sass/components/_typography.scss */
 .text-justify {
   text-align: justify !important;
 }
 
-/* line 43, ../sass/components/_typography.scss */
+/* line 33, ../sass/components/_typography.scss */
 .text-uppercase {
   text-transform: uppercase;
 }
 
-/* line 47, ../sass/components/_typography.scss */
+/* line 37, ../sass/components/_typography.scss */
 .text-lowercase {
   text-transform: lowercase;
 }
 
-/* line 51, ../sass/components/_typography.scss */
+/* line 41, ../sass/components/_typography.scss */
 .text-capitalize {
   text-transform: capitalize;
 }
 
-/* line 55, ../sass/components/_typography.scss */
+/* line 45, ../sass/components/_typography.scss */
 .font-thin {
   font-weight: 100 !important;
 }
 
-/* line 59, ../sass/components/_typography.scss */
+/* line 49, ../sass/components/_typography.scss */
 .font-light {
   font-weight: 300 !important;
 }
 
-/* line 63, ../sass/components/_typography.scss */
+/* line 53, ../sass/components/_typography.scss */
 .font-medium {
   font-weight: 500 !important;
 }
 
-/* line 67, ../sass/components/_typography.scss */
+/* line 57, ../sass/components/_typography.scss */
 .font-bold {
   font-weight: 900 !important;
 }
 
-/* line 71, ../sass/components/_typography.scss */
+/* line 61, ../sass/components/_typography.scss */
 .text-small {
   font-size: .9em !important;
 }
 
-/* line 75, ../sass/components/_typography.scss */
+/* line 65, ../sass/components/_typography.scss */
 .ellipsis-overflow {
   overflow: hidden;
   text-overflow: ellipsis;

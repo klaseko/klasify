@@ -17,7 +17,9 @@
   },
   "keywords": [],
   "homepage": "",
-  "dependencies": {},
+  "dependencies": {
+    "font-awesome": "^4.6.3"
+  },
   "devDependencies": {},
   "license": "MIT",
   "main": [
