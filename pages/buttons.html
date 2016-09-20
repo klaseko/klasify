@@ -1,0 +1,120 @@
+<html>
+  <head>
+    <title>Klasify</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/klasify.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/font.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/materialicons.min.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/material.min.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
+    <script type="text/javascript" src="../js/materialite.min.js"></script>
+    <style>
+      .banner {
+        height: 320px;
+        background: #369BC2;
+        background-image: linear-gradient(to bottom, #369BC2 0%, #62B6DD 100%);
+      }
+      .klaseko-logo-medium {
+        height: 100px;
+        background: url(/klasify/images/klaseko-logo-gray.png) no-repeat center center;
+        background-size: contain;
+      }
+
+      .codeTextBG{
+        background: none;
+      }
+
+      .codeBG{
+        background: #dbdbdb;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+      <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title"><strong>KLASIFY</strong></span>
+          <div class="mdl-layout-spacer"></div>
+        </div>
+      </header>
+      <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+        <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+          <a class="mdl-navigation__link" href="../index.html">Home</a>
+          <a class="mdl-navigation__link" href="">Accordion</a>
+          <a class="mdl-navigation__link" href="">Alerts</a>
+          <a class="mdl-navigation__link" href="">Box</a>
+          <a class="mdl-navigation__link" href="buttons.html">Buttons</a>
+          <a class="mdl-navigation__link" href="">Button Group</a>
+          <a class="mdl-navigation__link" href="">Cards</a>
+          <a class="mdl-navigation__link" href="">Images</a>
+          <a class="mdl-navigation__link" href="">Modal</a>
+          <a class="mdl-navigation__link" href="">Nav</a>
+          <a class="mdl-navigation__link" href="">Sidebar</a>
+          <a class="mdl-navigation__link" href="">Table</a>
+          <a class="mdl-navigation__link" href="">Tabs</a>
+          <a class="mdl-navigation__link" href="">Typoraphy</a>
+          <a class="mdl-navigation__link" href="">Validations</a>
+          <a class="mdl-navigation__link" href="">Color</a>
+        </nav>
+      </div>
+
+      <main class="mdl-layout__content mdl-color--grey-100">
+        <div class="mdl-grid demo-content">
+          <div class="col-10 col-flex">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <h3><strong>BUTTONS</strong></h3>
+                <h6>Variations on Klasify buttons.</h6>
+                <div class="col-8">
+                  <button class="button-lime">Leonardo</button>
+                  <button class="button-default color-white">Donatello</button>
+                  <button class="button-orange color-white">Raphael</button>
+                  <button class="button-white">Michelangelo</button>
+                </div>
+                <div class="col-12">
+
+                  <h6>TO INCLUDE AN KLASIFY BUTTON COMPONENT:</h6>
+                  <p>1. Code a <code> &lt;button&gt;</code> element. Include any desired attributes and values, such as an id or event handler, and add a text caption or image as appropriate.</p>
+                  <div class="panel panel-default">
+                    <div class="panel-body codeBG">
+                      <code class="no-margin no-padding codeTextBG">
+                        &lt;button&gt;Save&lt;/button&gt;<br>
+                      </code>
+                    </div>
+                  </div>
+                  <p>2.  Add one or more Klasify classes, separated by spaces, to the button using the <code>class</code> attribute.</p>
+                  <div class="panel panel-default">
+                    <div class="panel-body codeBG">
+                      <code class="no-margin no-padding codeTextBG">
+                        &lt;button class="button-orange color-white"&gt;Save&lt;/button&gt;<br>
+                      </code>
+                    </div>
+                  </div>
+                  <p>The button component is ready for use.</p>
+
+                </div>
+
+                <div class="col-12 no-margin">
+                  <h6>EXAMPLES:</h6>
+                  <div class="panel panel-default">
+                    <div class="panel-body codeBG">
+                      <code class="no-margin no-padding codeTextBG">
+                        &lt;button class="button-lime"&gt;Leonardo&lt;/button&gt;<br>
+                        &lt;button class="button-default color-white"&gt;Donatello&lt;/button&gt;<br>
+                        &lt;button class="button-orange color-white"&gt;Raphael&lt;/button&gt;<br>
+                        &lt;button class="button-white color-white"&gt;Michelangelo&lt;/button&gt;<br>
+                      </code>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
