@@ -66,55 +66,78 @@
           <div class="col-10 col-flex">
             <div class="panel panel-default">
               <div class="panel-body">
-                <h3><strong>BUTTONS</strong></h3>
-                <h6>Variations on Klasify buttons.</h6>
-                <div class="col-8">
-                  <button class="button-lime">Leonardo</button>
-                  <button class="button-default color-white">Donatello</button>
-                  <button class="button-orange color-white">Raphael</button>
-                  <button class="button-white">Michelangelo</button>
+                <span>
+                 <h3><strong>Alerts</strong></h3>
+                 <h6 class="no-padding no-margin">Klasify provides an easy way to create predefined alert messages:</h6>
+                </span>
+                <div class="col-12">
+                  <div class="col-6">
+                    <h3 class="no-padding no-margin">Message Alerts</h3>
+                    <div class="msg-warning">
+                      <strong>Warning!</strong> Indicates a warning that might need attention.
+                    </div>
+
+                    <div class="msg-alert">
+                      <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+                    </div>
+
+                    <div class="msg-success">
+                      <strong>The battle is ours!</strong> Victory is assured! This one is in the bag!
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <h3 class="no-margin">Alerts</h3>
+                    <div class="warning">
+                      <strong>Warning!</strong> Indicates a warning that might need attention.
+                    </div>
+
+                    <div class="error">
+                      <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+                    </div>
+
+                    <div class="success">
+                      <strong>Our enemy is crushed and our victory assured.</strong> Strategically, this one's in the bag!
+                    </div>
+                  </div>
                 </div>
                 <div class="col-12">
+                  <span>
+                    <h6>Message Alerts are created with the one of the three classes <code>.msg-success</code>, <code>.msg-alert</code>, <code>.msg-warning</code>while normal Alerts uses <code>.success</code>, <code>.error</code>, <code>.warning</code>:</h6>
+                    <h4>Example:</h4>
+                  </span>
+                  <h5 class="no-padding">Message Alerts:   </h5>
+                  <div class="panel panel-default">
+                    <div class="panel-body codeBG">
+                      <code class="no-margin no-padding codeTextBG">
+                        &lt;div class="msg-success"&gt;<br> &emsp;&emsp;Don't worry, lads, this one's in the bag!<br>&lt;/div&gt;<br>
+                        &lt;div class="msg-alert"&gt;<br> &emsp;&emsp;Sorry, friend, I let you down.<br>&lt;/div&gt;<br>
+                        &lt;div class="msg-warning"&gt;<br> &emsp;&emsp;Aw no, you've got to be kidding me.<br>&lt;/div&gt;<br>
+                      </code>
+                    </div>
+                  </div>
+                  <h5 class="no-padding">Alerts:   </h5>
+                  <div class="panel panel-default">
+                    <div class="panel-body codeBG">
+                      <code class="no-margin no-padding codeTextBG">
+                        &lt;div class="success"&gt; <br> &emsp;&emsp;It falls to me to inform you that this one is in the bag!<br>&lt;/div&gt;<br>
+                        &lt;div class="warning"&gt; <br> &emsp;&emsp;Sorry, friend, I let you down.<br>&lt;/div&gt;<br>
+                        &lt;div class="error"&gt; <br> &emsp;&emsp;Aw no, you've got to be kidding me.<br>&lt;/div&gt;<br>
+                      </code>
+                    </div>
+                  </div>
 
-                  <h6>TO INCLUDE AN KLASIFY BUTTON COMPONENT:</h6>
-                  <p>1. Code a <code> &lt;button&gt;</code> element. Include any desired attributes and values, such as an id or event handler, and add a text caption or image as appropriate.</p>
-                  <div class="panel panel-default">
-                    <div class="panel-body codeBG">
-                      <code class="no-margin no-padding codeTextBG">
-                        &lt;button&gt;Save&lt;/button&gt;<br>
-                      </code>
-                    </div>
-                  </div>
-                  <p>2.  Add one or more Klasify classes, separated by spaces, to the button using the <code>class</code> attribute.</p>
-                  <div class="panel panel-default">
-                    <div class="panel-body codeBG">
-                      <code class="no-margin no-padding codeTextBG">
-                        &lt;button class="button-orange color-white"&gt;Save&lt;/button&gt;<br>
-                      </code>
-                    </div>
-                  </div>
-                  <p>The button component is ready for use.</p>
+
 
                 </div>
 
-                <div class="col-12 no-margin">
-                  <h6>EXAMPLES:</h6>
-                  <div class="panel panel-default">
-                    <div class="panel-body codeBG">
-                      <code class="no-margin no-padding codeTextBG">
-                        &lt;button class="button-lime"&gt;Leonardo&lt;/button&gt;<br>
-                        &lt;button class="button-default color-white"&gt;Donatello&lt;/button&gt;<br>
-                        &lt;button class="button-orange color-white"&gt;Raphael&lt;/button&gt;<br>
-                        &lt;button class="button-white color-white"&gt;Michelangelo&lt;/button&gt;<br>
-                      </code>
-                    </div>
-                  </div>
-                </div>
+
               </div>
             </div>
           </div>
         </div>
       </main>
+
     </div>
   </body>
 </html>

@@ -1,19 +1,20 @@
 /* Roboto */
 @import "https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i";
 /* Settings */
-/* line 1, ../sass/settings/_normalize.sass */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/* line 9, ../sass/settings/_normalize.scss */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 6, ../sass/settings/_normalize.sass */
+/* line 19, ../sass/settings/_normalize.scss */
 body {
   margin: 0;
 }
 
-/* line 9, ../sass/settings/_normalize.sass */
+/* line 33, ../sass/settings/_normalize.scss */
 article,
 aside,
 details,
@@ -22,12 +23,15 @@ figure,
 footer,
 header,
 hgroup,
+main,
+menu,
 nav,
-section {
+section,
+summary {
   display: block;
 }
 
-/* line 21, ../sass/settings/_normalize.sass */
+/* line 54, ../sass/settings/_normalize.scss */
 audio,
 canvas,
 progress,
@@ -36,63 +40,63 @@ video {
   vertical-align: baseline;
 }
 
-/* line 28, ../sass/settings/_normalize.sass */
+/* line 67, ../sass/settings/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
-/* line 37, ../sass/settings/_normalize.sass */
+/* line 77, ../sass/settings/_normalize.scss */
 [hidden],
 template {
   display: none;
 }
 
-/* line 49, ../sass/settings/_normalize.sass */
+/* line 89, ../sass/settings/_normalize.scss */
 a {
   background-color: transparent;
 }
 
-/* line 58, ../sass/settings/_normalize.sass */
+/* line 98, ../sass/settings/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
 }
 
-/* line 70, ../sass/settings/_normalize.sass */
+/* line 110, ../sass/settings/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 78, ../sass/settings/_normalize.sass */
+/* line 118, ../sass/settings/_normalize.scss */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 87, ../sass/settings/_normalize.sass */
+/* line 127, ../sass/settings/_normalize.scss */
 dfn {
   font-style: italic;
 }
 
-/* line 96, ../sass/settings/_normalize.sass */
+/* line 136, ../sass/settings/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-/* line 105, ../sass/settings/_normalize.sass */
+/* line 145, ../sass/settings/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
 }
 
-/* line 114, ../sass/settings/_normalize.sass */
+/* line 154, ../sass/settings/_normalize.scss */
 small {
   font-size: 80%;
 }
 
-/* line 122, ../sass/settings/_normalize.sass */
+/* line 162, ../sass/settings/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -101,43 +105,43 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 130, ../sass/settings/_normalize.sass */
+/* line 170, ../sass/settings/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 134, ../sass/settings/_normalize.sass */
+/* line 174, ../sass/settings/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
 
-/* line 145, ../sass/settings/_normalize.sass */
+/* line 185, ../sass/settings/_normalize.scss */
 img {
   border: 0;
 }
 
-/* line 153, ../sass/settings/_normalize.sass */
+/* line 193, ../sass/settings/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 164, ../sass/settings/_normalize.sass */
+/* line 204, ../sass/settings/_normalize.scss */
 figure {
   margin: 1em 40px;
 }
 
-/* line 172, ../sass/settings/_normalize.sass */
+/* line 212, ../sass/settings/_normalize.scss */
 hr {
   box-sizing: content-box;
   height: 0;
 }
 
-/* line 181, ../sass/settings/_normalize.sass */
+/* line 221, ../sass/settings/_normalize.scss */
 pre {
   overflow: auto;
 }
 
-/* line 189, ../sass/settings/_normalize.sass */
+/* line 229, ../sass/settings/_normalize.scss */
 code,
 kbd,
 pre,
@@ -146,7 +150,7 @@ samp {
   font-size: 1em;
 }
 
-/* line 212, ../sass/settings/_normalize.sass */
+/* line 252, ../sass/settings/_normalize.scss */
 button,
 input,
 optgroup,
@@ -157,97 +161,99 @@ textarea {
   margin: 0;
 }
 
-/* line 226, ../sass/settings/_normalize.sass */
+/* line 266, ../sass/settings/_normalize.scss */
 button {
   overflow: visible;
 }
 
-/* line 237, ../sass/settings/_normalize.sass */
+/* line 277, ../sass/settings/_normalize.scss */
 button,
 select {
   text-transform: none;
 }
 
-/* line 252, ../sass/settings/_normalize.sass */
+/* line 290, ../sass/settings/_normalize.scss */
+button,
+html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
 }
 
-/* line 262, ../sass/settings/_normalize.sass */
+/* line 302, ../sass/settings/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
 }
 
-/* line 271, ../sass/settings/_normalize.sass */
+/* line 311, ../sass/settings/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 282, ../sass/settings/_normalize.sass */
+/* line 322, ../sass/settings/_normalize.scss */
 input {
   line-height: normal;
 }
 
-/* line 294, ../sass/settings/_normalize.sass */
+/* line 334, ../sass/settings/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
 
-/* line 306, ../sass/settings/_normalize.sass */
+/* line 346, ../sass/settings/_normalize.scss */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
-/* line 316, ../sass/settings/_normalize.sass */
+/* line 356, ../sass/settings/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   box-sizing: content-box;
 }
 
-/* line 327, ../sass/settings/_normalize.sass */
+/* line 367, ../sass/settings/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 336, ../sass/settings/_normalize.sass */
+/* line 376, ../sass/settings/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
 
-/* line 347, ../sass/settings/_normalize.sass */
+/* line 387, ../sass/settings/_normalize.scss */
 legend {
   border: 0;
   padding: 0;
 }
 
-/* line 356, ../sass/settings/_normalize.sass */
+/* line 396, ../sass/settings/_normalize.scss */
 textarea {
   overflow: auto;
 }
 
-/* line 365, ../sass/settings/_normalize.sass */
+/* line 405, ../sass/settings/_normalize.scss */
 optgroup {
   font-weight: bold;
 }
 
-/* line 376, ../sass/settings/_normalize.sass */
+/* line 416, ../sass/settings/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 381, ../sass/settings/_normalize.sass */
+/* line 421, ../sass/settings/_normalize.scss */
 td,
 th {
   padding: 0;
@@ -269,7 +275,7 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  margin-top: .5em;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
