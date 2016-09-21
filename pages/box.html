@@ -66,55 +66,97 @@
           <div class="col-10 col-flex">
             <div class="panel panel-default">
               <div class="panel-body">
-                <h3><strong>BUTTONS</strong></h3>
-                <h6>Variations on Klasify buttons.</h6>
-                <div class="col-8">
-                  <button class="button-lime">Leonardo</button>
-                  <button class="button-default color-white">Donatello</button>
-                  <button class="button-orange color-white">Raphael</button>
-                  <button class="button-white">Michelangelo</button>
+                <span>
+                 <h3><strong>Box</strong></h3>
+                 <h6 class="no-padding no-margin">A <code>box</code> class in klasify is a bordered box with some padding around its content:</h6>
+                </span>
+
+                <div class="col-12">
+                  <div class="box">
+                    <div class="box-body">
+                      <p>Basic Box</p>
+                    </div>
+                  </div>
                 </div>
                 <div class="col-12">
-
-                  <h6>TO INCLUDE AN KLASIFY BUTTON COMPONENT:</h6>
-                  <p>1. Code a <code> &lt;button&gt;</code> element. Include any desired attributes and values, such as an id or event handler, and add a text caption or image as appropriate.</p>
+                  <h5>Example:</h5>
                   <div class="panel panel-default">
                     <div class="panel-body codeBG">
                       <code class="no-margin no-padding codeTextBG">
-                        &lt;button&gt;Save&lt;/button&gt;<br>
-                      </code>
-                    </div>
-                  </div>
-                  <p>2.  Add one or more Klasify classes, separated by spaces, to the button using the <code>class</code> attribute.</p>
-                  <div class="panel panel-default">
-                    <div class="panel-body codeBG">
-                      <code class="no-margin no-padding codeTextBG">
-                        &lt;button class="button-orange color-white"&gt;Save&lt;/button&gt;<br>
-                      </code>
-                    </div>
-                  </div>
-                  <p>The button component is ready for use.</p>
-
-                </div>
-
-                <div class="col-12 no-margin">
-                  <h6>EXAMPLES:</h6>
-                  <div class="panel panel-default">
-                    <div class="panel-body codeBG">
-                      <code class="no-margin no-padding codeTextBG">
-                        &lt;button class="button-lime"&gt;Leonardo&lt;/button&gt;<br>
-                        &lt;button class="button-default color-white"&gt;Donatello&lt;/button&gt;<br>
-                        &lt;button class="button-orange color-white"&gt;Raphael&lt;/button&gt;<br>
-                        &lt;button class="button-white color-white"&gt;Michelangelo&lt;/button&gt;<br>
+                        &lt;div class="box"&gt;
+                        <br>&emsp;&emsp; &lt;div class="box-body"&gt;
+                        <br>&emsp;&emsp;&emsp;&emsp;&emsp;&lt;p&gt;Basic Box&lt;/p&gt;&emsp;
+                        <br>&emsp;&emsp;&emsp;&lt;/div&gt;
+                        <br>&lt;/div&gt;<br>
                       </code>
                     </div>
                   </div>
                 </div>
+
+                <span>
+                  <h3><strong>Box Header</strong></h3>
+                  <h6 class="no-padding no-margin">The <code>.box-header</code> class adds a heading to the panel:</h6>
+                </span>
+                <div class="col-12">
+                  <div class="box">
+                    <div class="box-header">Box Header</div>
+                    <div class="box-body">
+                      <p>Box Content</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <h5>Example:</h5>
+                  <div class="panel panel-default">
+                    <div class="panel-body codeBG">
+                      <code class="no-margin no-padding codeTextBG">
+                        &lt;div class="box"&gt;
+                        <br>&emsp;&emsp;&emsp;&lt;div class="box-header"&gt;Box Header&lt;/div&gt;
+                        <br>&emsp;&emsp; &lt;div class="box-body"&gt;
+                        <br>&emsp;&emsp;&emsp;&emsp;&emsp;&lt;p&gt;Basic Box&lt;/p&gt;&emsp;
+                        <br>&emsp;&emsp;&emsp;&lt;/div&gt;
+                        <br>&lt;/div&gt;<br>
+                      </code>
+                    </div>
+                  </div>
+                </div>
+
+                <span>
+                  <h3><strong>Box Footer</strong></h3>
+                  <h6 class="no-padding no-margin">The <code>.box-footer</code> class adds a heading to the panel:</h6>
+                </span>
+                <div class="col-12">
+                  <div class="box">
+                    <div class="box-header">Box Header</div>
+                    <div class="box-body">
+                      <p>Box Content</p>
+                    </div>
+                    <div class="box-footer">Box Footer</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <h5>Example:</h5>
+                  <div class="panel panel-default">
+                    <div class="panel-body codeBG">
+                      <code class="no-margin no-padding codeTextBG">
+                        &lt;div class="box"&gt;
+                        <br>&emsp;&emsp;&emsp;&lt;div class="box-header"&gt;Box Header&lt;/div&gt;
+                        <br>&emsp;&emsp; &lt;div class="box-body"&gt;
+                        <br>&emsp;&emsp;&emsp;&emsp;&emsp;&lt;p&gt;Basic Box&lt;/p&gt;&emsp;
+                        <br>&emsp;&emsp;&emsp;&lt;/div&gt;
+                         <br>&emsp;&emsp;&emsp;&lt;div class="box-header"&gt;Box Header&lt;/div&gt;
+                        <br>&lt;/div&gt;<br>
+                      </code>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
           </div>
         </div>
       </main>
+
     </div>
   </body>
 </html>
