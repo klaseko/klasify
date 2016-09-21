@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/materialicons.min.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/material.min.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/materialite.min.js"></script>
     <style>
       .banner {
@@ -20,6 +22,29 @@
         height: 100px;
         background: url(/klasify/images/klaseko-logo-gray.png) no-repeat center center;
         background-size: contain;
+      }
+       .codeTextBG{
+        background: none;
+      }
+      .codeBG{
+        background: #dbdbdb;
+      }
+      .wrapper {
+        display: table;
+        width: 100%;
+      }
+      .row {
+          display: table-row;
+      }
+      .col {
+          display: table-cell;
+      }
+      .col.wide {
+          width: 100%;
+          padding-left: 50px;
+      }
+      .wide input {
+          width: 100%;
       }
     </style>
   </head>
@@ -58,12 +83,29 @@
           <div class="col-10 col-flex">
             <div class="panel panel-default">
               <div class="panel-body">
-                <h6><strong>COMPONENTS</strong></h6>
-                <p>Klasify is a library of components for web developers based on Google's Material Design.</p>
-                <p><i>"In brightest day, in blackest night,</i></p>
-                <p><i>No evil shall escape my sight.</i></p>
-                <p><i>Let those who worship evil's might</i></p>
-                <p><i>Beware my power--Green Lantern's light!"</i></p>
+                <h3><strong>Quick Start</strong></h3>
+                <div class="col-12 no-margin">
+                  <div class="panel panel-default">
+                    <div class="panel-body codeBG">
+                      <div class="col-12">
+                        <div class="text-center">
+                        <h4 class="no-padding no-margin"><strong>Complete CSS</strong></h4>
+                          <div class="wrapper">
+                            <div class="row">
+                              <div class="col wide">
+                                <input type="text" class="text" value="insert link to klasify css"/>
+                              </div>
+                              <div class="col">
+                                <button class="color-white btn" data-toggle="tooltip" data-placement="top" title="Copy to Clipboard">Copy!</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -71,6 +113,30 @@
     </div>
 
 
+    <script type="text/javascript">
+      (function () {
+        window.onload = function () {
+          var copy_btn;
+          copy_btn = document.querySelector('.btn');
+          return copy_btn.addEventListener('click', function (event) {
+            var err, msg, successful, text;
+            text = document.querySelector('.text');
+            text.select();
+            try {
+              successful = document.execCommand('copy');
+              msg = successful ? 'successful' : 'unsuccessful';
+              return console.log('Copy command was ' + msg);
+            } catch (_error) {
+              err = _error;
+              return console.log('Oops, unable to copy');
+            }
+          });
+        };
+      }.call(this));
 
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
   </body>
 </html>
