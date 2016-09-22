@@ -17,9 +17,9 @@
 }
 
 .box-header, .box-header-gray {
-  width: 96%;
-  padding: 2% 0;
-  margin: 0 2%;
+  width: calc(100% - 40px);
+  padding: 20px 0;
+  margin: 0 20px;
   float: left;
   font-family: 'Roboto';
   font-size: 16px;
@@ -28,29 +28,29 @@
   color:rgb(10,10,10);
 
   @media (max-width: $screen-mobile-max){
-    margin:0;
-    width:92%;
-    padding: 4% !important;
+    width: calc(100% - 28px);
+    padding: 14px 0;
+    margin: 0 14px;
   }
 }
 
 .box-body, .box-body-gray {
-  width:98%;
-  padding:1%;
-  float:left;
-  background:white;
+  width: calc(100% - 40px);
+  padding: 20px;
+  float: left;
+  background: white;
   border-radius: 7px;
 
   @media (max-width: $screen-mobile-max) {
-    width:92%;
-    padding:4% !important;
+    width: calc(100% - 28px);
+    padding: 14px;
   }
 }
 
 .box-footer, .box-footer-gray {
-  width: 96%;
-  padding: 2% 0;
-  margin: 0 2%;
+  width: calc(100% - 40px);
+  padding: 20px 0;
+  margin: 0 20px;
   float: left;
   font-family: 'Roboto';
   font-size: 16px;
@@ -58,8 +58,8 @@
   background:white;
 
   @media (max-width: $screen-mobile-max){
-    margin:0;
-    width:92%;
-    padding: 4% !important;
+    width: calc(100% - 28px);
+    padding: 14px 0;
+    margin: 0 14px;
   }
 }
