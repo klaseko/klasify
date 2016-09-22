@@ -1088,9 +1088,9 @@ label.error {
 
 /* line 19, ../sass/components/_box.scss */
 .box-header, .box-header-gray {
-  width: 96%;
-  padding: 2% 0;
-  margin: 0 2%;
+  width: calc(100% - 40px);
+  padding: 20px 0;
+  margin: 0 20px;
   float: left;
   font-family: 'Roboto';
   font-size: 16px;
@@ -1101,16 +1101,16 @@ label.error {
 @media (max-width: 767px) {
   /* line 19, ../sass/components/_box.scss */
   .box-header, .box-header-gray {
-    margin: 0;
-    width: 92%;
-    padding: 4% !important;
+    width: calc(100% - 28px);
+    padding: 14px 0;
+    margin: 0 14px;
   }
 }
 
 /* line 37, ../sass/components/_box.scss */
 .box-body, .box-body-gray {
-  width: 98%;
-  padding: 1%;
+  width: calc(100% - 40px);
+  padding: 20px;
   float: left;
   background: white;
   border-radius: 7px;
@@ -1118,16 +1118,16 @@ label.error {
 @media (max-width: 767px) {
   /* line 37, ../sass/components/_box.scss */
   .box-body, .box-body-gray {
-    width: 92%;
-    padding: 4% !important;
+    width: calc(100% - 28px);
+    padding: 14px;
   }
 }
 
 /* line 50, ../sass/components/_box.scss */
 .box-footer, .box-footer-gray {
-  width: 96%;
-  padding: 2% 0;
-  margin: 0 2%;
+  width: calc(100% - 40px);
+  padding: 20px 0;
+  margin: 0 20px;
   float: left;
   font-family: 'Roboto';
   font-size: 16px;
@@ -1137,9 +1137,9 @@ label.error {
 @media (max-width: 767px) {
   /* line 50, ../sass/components/_box.scss */
   .box-footer, .box-footer-gray {
-    margin: 0;
-    width: 92%;
-    padding: 4% !important;
+    width: calc(100% - 28px);
+    padding: 14px 0;
+    margin: 0 14px;
   }
 }
 
@@ -1244,6 +1244,13 @@ label.error {
   /* line 85, ../sass/components/_button.scss */
   .button-text {
     display: none;
+  }
+
+  /* line 86, ../sass/components/_button.scss */
+  .button-icon {
+    width: 98%;
+    padding: 1%;
+    text-align: center;
   }
 }
 /* line 1, ../sass/components/_button_group.scss */
@@ -1758,11 +1765,6 @@ label.error {
 .ellipsis-overflow {
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-/* line 2, ../sass/components/_validation.scss */
-form.ng-pristine .ng-pristine {
-  border: 1px solid #e6e6e6 !important;
 }
 
 /* line 8, ../sass/components/_validation.scss */
