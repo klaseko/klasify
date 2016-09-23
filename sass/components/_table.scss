@@ -4,3 +4,7 @@
   height:auto;
   margin-bottom: 2%;
 }
+
+.row-container:nth-child(odd) {
+  background: rgb(250,250,250)
+}

@@ -1,0 +1,146 @@
+<html>
+  <head>
+    <title>Klasify</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/klasify.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/font.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/materialicons.min.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/material.min.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
+    <script type="text/javascript" src="../js/materialite.min.js"></script>
+    <style>
+      .banner {
+        height: 320px;
+        background: #369BC2;
+        background-image: linear-gradient(to bottom, #369BC2 0%, #62B6DD 100%);
+      }
+      .klaseko-logo-medium {
+        height: 100px;
+        background: url(/klasify/images/klaseko-logo-gray.png) no-repeat center center;
+        background-size: contain;
+      }
+
+      .codeTextBG{
+        background: none;
+      }
+
+      .codeBG{
+        background: #dbdbdb;
+      }
+    </style>
+  </head>
+  <body>
+
+      <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+        <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
+          <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title"><strong>KLASIFY</strong></span>
+            <div class="mdl-layout-spacer"></div>
+          </div>
+        </header>
+        <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+          <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+            <a class="mdl-navigation__link" href="../index.html">Home</a>
+            <a class="mdl-navigation__link" href="">Accordion</a>
+            <a class="mdl-navigation__link" href="alerts.html">Alerts</a>
+            <a class="mdl-navigation__link" href="box.html">Box</a>
+            <a class="mdl-navigation__link" href="buttons.html">Buttons</a>
+            <a class="mdl-navigation__link" href="button-group.html">Button Group</a>
+            <a class="mdl-navigation__link" href="cards.html">Cards</a>
+            <a class="mdl-navigation__link" href="image.html">Images</a>
+            <a class="mdl-navigation__link" href="">Modal</a>
+            <a class="mdl-navigation__link" href="">Nav</a>
+            <a class="mdl-navigation__link" href="">Sidebar</a>
+            <a class="mdl-navigation__link" href="table.html">Table</a>
+            <a class="mdl-navigation__link" href="tabs.html">Tabs</a>
+            <a class="mdl-navigation__link" href="typography.html">Typography</a>
+            <a class="mdl-navigation__link" href="">Validations</a>
+            <a class="mdl-navigation__link" href="colors.html">Color</a>
+          </nav>
+        </div>
+
+        <main class="mdl-layout__content mdl-color--grey-100">
+          <div class="mdl-grid demo-content">
+            <div class="col-10 col-flex">
+             <div class="box">
+                <div class="box-header"><strong>Tabs</strong></div>
+                <div class="box-body">
+                 <div class="col-12">
+                    <div class="col-12">
+                      <div class="tabs">
+                        <ul class="tab-links">
+                          <li><a class="active" href="javascript:void(0);">Home</a></li>
+                          <li><a href="javascript:void(0);">Menu 1</a></li>
+                          <li><a href="javascript:void(0);">Menu 2</a></li>
+                          <li><a href="javascript:void(0);">Menu 3</a></li>
+                        </ul>
+                      </div>
+                      <div class="clear-20"></div>
+                      <span>
+                        <p class="no-margin">Tabs are created with <code> &lt;ul class="tab-links"&gt;</code>:</p>
+                        <p class="no-margin"><strong>Tip:</strong>  Also to mark the current page active, add <code>.active</code> class inside the
+                        <code>&lt;a&gt;</code>tag.</p>
+                        <p class="no-margin">The following example creates navigation tabs:</p>
+                      </span>
+                      <div>
+                        <h5>Example:</h5>
+                        <div class="panel panel-default">
+                          <div class="panel-body codeBG">
+                            <code class="no-margin no-padding codeTextBG">
+                              &lt;div class="tabs"&gt;
+                              <br>&emsp;&lt;ul class="tab-links">
+                              <br>&emsp;&emsp;&lt;li&gt; &lt;a class="active" href="#">Home &lt;/a&gt;&lt;/li&gt;
+                              <br>&emsp;&emsp;&lt;li&gt; &lt;a href="#">Menu 1 &lt;/a&gt;&lt;/li&gt;
+                              <br>&emsp;&emsp;&lt;li&gt; &lt;a href="#">Menu 2 &lt;/a&gt;&lt;/li&gt;
+                              <br>&emsp;&emsp;&lt;li&gt; &lt;a href="#">Menu 3 &lt;/a&gt;&lt;/li&gt;
+                              <br>&emsp;&emsp;&lt;/ul&gt;
+                              <br>&lt;/div&gt;
+                            </code>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <span>
+                      <p class="no-margin">You can also add a content on each tabs by using <code>.tab-content</code></p>
+                    </span>
+                    <div class="col-12">
+                      <div class="tabs">
+                        <ul class="tab-links">
+                          <li><a class="active" href="javascript:void(0);">Home</a></li>
+                          <li><a href="javascript:void(0);">Menu 1</a></li>
+                          <li><a href="javascript:void(0);">Menu 2</a></li>
+                          <li><a href="javascript:void(0);">Menu 3</a></li>
+                        </ul>
+                      </div>
+                      <div class="tab-content">
+                        <div class="tab programs active">
+                          <div class="col-4 no-collapse">
+                            <label>Tab Content</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <h5>Example:</h5>
+                        <div class="panel panel-default">
+                          <div class="panel-body codeBG">
+                           <code class="no-margin no-padding codeTextBG">
+                              &lt;div class="tab-content"&gt;
+                              <br>&emsp;&lt;p&gt;Content&lt;/p&gt;
+                              <br>&lt;/div&gt;
+                            </code>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

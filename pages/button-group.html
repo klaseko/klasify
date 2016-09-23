@@ -1,0 +1,154 @@
+<html>
+  <head>
+    <title>Klasify</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/klasify.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/font.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/materialicons.min.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/material.min.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
+    <script type="text/javascript" src="../js/materialite.min.js"></script>
+    <style>
+      .banner {
+        height: 320px;
+        background: #369BC2;
+        background-image: linear-gradient(to bottom, #369BC2 0%, #62B6DD 100%);
+      }
+      .klaseko-logo-medium {
+        height: 100px;
+        background: url(/klasify/images/klaseko-logo-gray.png) no-repeat center center;
+        background-size: contain;
+      }
+
+      .codeTextBG{
+        background: none;
+      }
+
+      .codeBG{
+        background: #dbdbdb;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+      <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title"><strong>KLASIFY</strong></span>
+          <div class="mdl-layout-spacer"></div>
+        </div>
+      </header>
+      <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+        <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+          <a class="mdl-navigation__link" href="../index.html">Home</a>
+          <a class="mdl-navigation__link" href="">Accordion</a>
+          <a class="mdl-navigation__link" href="alerts.html">Alerts</a>
+          <a class="mdl-navigation__link" href="box.html">Box</a>
+          <a class="mdl-navigation__link" href="buttons.html">Buttons</a>
+          <a class="mdl-navigation__link" href="button-group.html">Button Group</a>
+          <a class="mdl-navigation__link" href="cards.html">Cards</a>
+          <a class="mdl-navigation__link" href="image.html">Images</a>
+          <a class="mdl-navigation__link" href="">Modal</a>
+          <a class="mdl-navigation__link" href="">Nav</a>
+          <a class="mdl-navigation__link" href="">Sidebar</a>
+          <a class="mdl-navigation__link" href="table.html">Table</a>
+          <a class="mdl-navigation__link" href="tabs.html">Tabs</a>
+          <a class="mdl-navigation__link" href="typography.html">Typography</a>
+          <a class="mdl-navigation__link" href="">Validations</a>
+          <a class="mdl-navigation__link" href="colors.html">Color</a>
+        </nav>
+      </div>
+
+      <main class="mdl-layout__content mdl-color--grey-100">
+        <div class="mdl-grid demo-content">
+          <div class="col-10 col-flex">
+            <div class="box">
+              <div class="box-header"><strong>Button Groups</strong></div>
+                <div class="box-body">
+                <div class="col-12">
+                    <div class="col-12">
+                      <p>Group a series of buttons together on a single line with the button group.</p>
+                      <div class="btn-group">
+                        <button class="button-default color-white disabled">Left</button>
+                        <button class="button-default color-white">Middle</button>
+                        <button class="button-default color-white">Right</button>
+                      </div>
+                    </div>
+                     <div class="col-12">
+                      <div class="btn-group">
+                        <button class="button-default color-white">Prev</button>
+                        <button class="button-default color-white">1</button>
+                        <button class="button-default color-white">2</button>
+                        <button class="button-default color-white">3</button>
+                        <button class="button-default color-white">4</button>
+                        <button class="button-default color-white">5</button>
+                        <button class="button-default color-white">6</button>
+                        <button class="button-default color-white">7</button>
+                        <button class="button-default color-white">8</button>
+                        <button class="button-default color-white">Next</button>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <h5 class="no-padding no-margin">Example:</h5>
+                      <div class="panel panel-default">
+                        <div class="panel-body codeBG">
+                          <code class="no-margin no-padding codeTextBG">
+                          &lt;div class="btn-group"&gt;
+                          <br>&emsp;&emsp;&emsp;&lt;button class="button-default color-white"&gt;Left&lt;/button&gt;
+                           <br>&emsp;&emsp;&emsp;&lt;button class="button-default color-white"&gt;Middle&lt;/button&gt;
+                            <br>&emsp;&emsp;&emsp;&lt;button class="button-default color-white"&gt;Right&lt;/button&gt;
+                          <br>&lt;/div&gt;<br>
+                          </code>
+                        </div>
+                      </div>
+                    </div>
+                     <div class="col-12">
+                     <p>By adding <code>.active</code> and <code>.disabled</code> classes to the buttons will change its state to an active or disabled button.</p>
+                      <div class="btn-group">
+                        <button class="button-default color-white">Left</button>
+                        <button class="button-default color-white disabled">Middle</button>
+                        <button class="button-default color-white active">Right</button>
+                      </div>
+                    </div>
+                     <div class="col-12">
+                      <div class="btn-group">
+                        <button class="button-default color-white active">Prev</button>
+                        <button class="button-default color-white disabled">1</button>
+                        <button class="button-default color-white ">2</button>
+                        <button class="button-default color-white disabled">3</button>
+                        <button class="button-default color-white ">4</button>
+                        <button class="button-default color-white disabled">5</button>
+                        <button class="button-default color-white ">6</button>
+                        <button class="button-default color-white disabled">7</button>
+                        <button class="button-default color-white ">8</button>
+                        <button class="button-default color-white active">Next</button>
+                      </div>
+                    </div>
+                     <div class="col-12">
+                      <h5 class="no-padding no-margin">Example:</h5>
+                      <div class="panel panel-default">
+                        <div class="panel-body codeBG">
+                          <code class="no-margin no-padding codeTextBG">
+                          &lt;div class="btn-group"&gt;
+                          <br>&emsp;&emsp;&emsp;&lt;button class="button-default color-white"&gt;Left&lt;/button&gt;
+                           <br>&emsp;&emsp;&emsp;&lt;button class="button-default color-white disabled"&gt;Middle&lt;/button&gt;
+                            <br>&emsp;&emsp;&emsp;&lt;button class="button-default color-white active"&gt;Right&lt;/button&gt;
+                          <br>&lt;/div&gt;<br>
+                          </code>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+
+    </div>
+  </body>
+</html>
