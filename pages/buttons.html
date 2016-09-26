@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../stylesheets/material.min.css">
     <link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
     <script type="text/javascript" src="../js/materialite.min.js"></script>
+    <link rel="icon" type="image/png" href="../favicon.ico"/>
     <style>
       .banner {
         height: 320px;
@@ -51,13 +52,13 @@
           <a class="mdl-navigation__link" href="cards.html">Cards</a>
           <a class="mdl-navigation__link" href="image.html">Images</a>
           <a class="mdl-navigation__link" href="">Modal</a>
-          <a class="mdl-navigation__link" href="">Nav</a>
-          <a class="mdl-navigation__link" href="">Sidebar</a>
           <a class="mdl-navigation__link" href="table.html">Table</a>
           <a class="mdl-navigation__link" href="tabs.html">Tabs</a>
           <a class="mdl-navigation__link" href="typography.html">Typography</a>
           <a class="mdl-navigation__link" href="">Validations</a>
           <a class="mdl-navigation__link" href="colors.html">Color</a>
+          <a class="mdl-navigation__link" href="dashboard.html">Sample Dashboard</a>
+          <a class="mdl-navigation__link" href="login.html">Login/Register Page</a>
         </nav>
       </div>
 
@@ -65,67 +66,85 @@
         <div class="mdl-grid demo-content">
           <div class="col-10 col-flex">
             <div class="box">
-              <div class="box-header"><strong>Buttons</strong></div>
+              <div class="box-header"><strong>Button Styles</strong></div>
               <div class="box-body">
                 <div class="col-12">
+                  <p>Klasify provides four styles of buttons</p>
 
-
-                  <div class="col-12">
-
-                    <h6>Normal Buttons</h6>
+                  <div class="container-flex">
                     <button class="button-lime">Quas</button>
                     <button class="button-default color-white">Wex</button>
                     <button class="button-orange color-white">Exort</button>
                     <button class="button-white">Invoke</button>
                   </div>
-                  <div class="col-12">
-                    <h6>Disabled Buttons</h6>
-                    <button class="button-lime disabled">Quas</button>
-                    <button class="button-default color-white disabled">Wex</button>
-                    <button class="button-orange color-white disabled">Exort</button>
-                    <button class="button-white disabled">Invoke</button>
-                  </div>
-
-                  <div class="col-12">
-
-                    <h6>TO INCLUDE AN KLASIFY BUTTON COMPONENT:</h6>
-                    <p>1. Code a <code> &lt;button&gt;</code> element. Include any desired attributes and values, such as an id or event handler, and add a text caption or image as appropriate.</p>
-                    <div class="panel panel-default">
-                      <div class="panel-body codeBG">
-                        <code class="no-margin no-padding codeTextBG">
-                          &lt;button&gt;Save&lt;/button&gt;<br>
-                        </code>
-                      </div>
-                    </div>
-                    <p>2.  Add one or more Klasify classes, separated by spaces, to the button using the <code>class</code> attribute.</p>
-                    <div class="panel panel-default">
-                      <div class="panel-body codeBG">
-                        <code class="no-margin no-padding codeTextBG">
-                          &lt;button class="button-orange color-white"&gt;Save&lt;/button&gt;<br>
-                        </code>
-                      </div>
-                    </div>
-                    <p>The button component is ready for use.</p>
-
-                  </div>
-
-                  <div class="col-12 no-margin">
-                    <h6>EXAMPLES:</h6>
-                    <div class="panel panel-default">
-                      <div class="panel-body codeBG">
-                        <code class="no-margin no-padding codeTextBG">
-                          &lt;button class="button-lime"&gt;Quas&lt;/button&gt;<br>
-                          &lt;button class="button-default color-white"&gt;Wex&lt;/button&gt;<br>
-                          &lt;button class="button-orange color-white"&gt;Exort&lt;/button&gt;<br>
-                          &lt;button class="button-white color-white"&gt;Invoke&lt;/button&gt;<br>
-                        </code>
-                      </div>
+                  <div class="clear-20"></div>
+                  <p>To achieve the button styles above, Klasify has the following classes:</p>
+                  <ul>
+                    <li><code>.button-lime</code></li>
+                    <li><code>.button-default</code></li>
+                    <li><code>.button-orange</code></li>
+                    <li><code>.button-white</code></li>
+                  </ul>
+                  <p>The following example shows the code for the different button styles:</p>
+                  <h6 class="no-margin no-padding">EXAMPLES:</h6>
+                  <div class="panel panel-default">
+                    <div class="panel-body codeBG">
+                      <code class="no-margin no-padding codeTextBG">
+                        &lt;button class="button-lime"&gt;Quas&lt;/button&gt;<br>
+                        &lt;button class="button-default color-white"&gt;Wex&lt;/button&gt;<br>
+                        &lt;button class="button-orange color-white"&gt;Exort&lt;/button&gt;<br>
+                        &lt;button class="button-white color-white"&gt;Invoke&lt;/button&gt;<br>
+                      </code>
                     </div>
                   </div>
+                  <div class="clear-10"></div>
+                  <p>The button classes can be used on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element:</p>
+                  <h6 class="no-margin no-padding">EXAMPLES:</h6>
+                  <div class="panel panel-default">
+                    <div class="panel-body codeBG">
+                      <code class="no-margin no-padding codeTextBG">
+                        &lt;a href="#" class="button-lime"&gt;Link Button&lt;/a&gt;<br>
+                        &lt;button type="button" class="button-default color-white"&gt;Button&lt;/button&gt;<br>
+                        &lt;input type="button" class="button-orange color-white" value="Input Button"&gt;<br>
+                        &lt;input type="submit" class="button-orange color-white" value="Submit Button"&gt;<br>
+                      </code>
+                    </div>
+                  </div>
+                  <span>
+                    <p class="no-padding no-margin"><strong>Why do we put a # in the href attribute of the link?</strong></p>
+                    <p class="no-padding no-margin"><small>Since we do not have any page to link it to, and we do not want to get a "404" message, we put # as the link. In real life it should of course been a real URL to the "Search" page.</small></p>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box-header"><strong>Active/Disabled Buttons</strong></div>
+              <div class="box-body">
+                <div class="col-12">
+                  <p>A button can be set to an active (appear pressed) or a disabled (unclickable) state:</p>
+
+                  <div class="container-flex">
+                    <button class="button-default color-white active">Active</button>
+                    <button class="button-default color-white disabled">Disabled</button>
+                  </div>
+                  <div class="clear-10"></div>
+                  <p>The class <code>.active</code> makes a button appear pressed, and the class <code>.disabled</code> makes a button unclickable:</p>
+                  <h6 class="no-margin no-padding">EXAMPLES:</h6>
+                  <div class="panel panel-default">
+                    <div class="panel-body codeBG">
+                      <code class="no-margin no-padding codeTextBG">
+                        &lt;button class="button-default color-white active"&gt;Active&lt;/button&gt;<br>
+                        &lt;button class="button-default color-white disabled"&gt;Disabled&lt;/button&gt;<br>
+                      </code>
+                    </div>
+                  </div>
+
 
                 </div>
               </div>
             </div>
+
+
           </div>
         </div>
       </main>

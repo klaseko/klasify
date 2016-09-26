@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../stylesheets/material.min.css">
     <link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
     <script type="text/javascript" src="../js/materialite.min.js"></script>
+    <link rel="icon" type="image/png" href="../favicon.ico"/>
     <style>
       .banner {
         height: 320px;
@@ -50,13 +51,13 @@
           <a class="mdl-navigation__link" href="cards.html">Cards</a>
           <a class="mdl-navigation__link" href="image.html">Images</a>
           <a class="mdl-navigation__link" href="">Modal</a>
-          <a class="mdl-navigation__link" href="">Nav</a>
-          <a class="mdl-navigation__link" href="">Sidebar</a>
           <a class="mdl-navigation__link" href="table.html">Table</a>
           <a class="mdl-navigation__link" href="tabs.html">Tabs</a>
           <a class="mdl-navigation__link" href="typography.html">Typography</a>
           <a class="mdl-navigation__link" href="">Validations</a>
           <a class="mdl-navigation__link" href="colors.html">Color</a>
+          <a class="mdl-navigation__link" href="dashboard.html">Sample Dashboard</a>
+          <a class="mdl-navigation__link" href="login.html">Login/Register Page</a>
         </nav>
       </div>
 
@@ -67,7 +68,7 @@
               <div class="box-header"><strong>Cards</strong></div>
               <div class="box-body">
                <div class="col-12">
-                <h6>Self-contained pieces of paper with data.</h6>
+                <h6>A card is a flexible and extensible content container. It includes options for image caps, a wide variety of content, contextual background colors, and powerful display options.</h6>
                 <div class="col-12">
                   <div class="col-4">
                     <div class="card">
@@ -115,7 +116,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 no-margin">
+                <div class="col-12 no-margin no-padding">
                   <h6>Simple card with image and text:</h6>
                   <div class="panel panel-default">
                     <div class="panel-body codeBG">
@@ -133,64 +134,125 @@
                     </div>
                   </div>
                 </div>
+               </div>
+            </div>
+          </div>
+
+          <div class="box">
+              <div class="box-header"><strong>Text Alignment</strong></div>
+              <div class="box-body">
+               <div class="col-12">
+                <h6>You can quickly change the text alignment of any card—in its entirety or specific parts—with our text align classes.</h6>
                 <div class="col-12">
-                  <h6>TO INCLUDE AN KLASIFY CARD COMPONENT:</h6>
-                  <p> 1. Code a <code> &lt;div&gt;</code> element; this is the "outer" container, intended to hold all of the card's content.
-                  <div class="panel panel-default">
-                    <div class="panel-body codeBG">
-                      <code class="no-margin no-padding codeTextBG">
-                        &lt;div&gt;<br>&lt;/div&gt;<br>
-                      </code>
+                  <div class="col-4">
+                    <div class="card">
+                      <div class="card-text">
+                        <h3 class="font-roboto text-right"><strong>Right</strong></h3>
+                      </div>
                     </div>
                   </div>
-                  <p> 2. Inside the div, code one or more "inner" divs, one for each desired content block. A card containing a title, an image, some text, and an action bar would contain four "inner" divs, all siblings.</p>
-                  <div class="panel panel-default">
-                    <div class="panel-body codeBG">
-                      <code class="no-margin no-padding codeTextBG">
-                        &lt;div&gt;<br>
-                        &emsp;&lt;div&gt;<br>
-                        &emsp;&emsp;...<br>
-                        &emsp;&lt;/div&gt;<br>
-                        &emsp;&lt;div&gt;<br>
-                        &emsp;&emsp;...<br>
-                        &emsp;&lt;/div&gt;<br>
-                        &lt;/div&gt;
-                      </code>
+                  <div class="col-4">
+                    <div class="card">
+                      <div class="card-text">
+                        <h3 class="font-roboto text-center"><strong>Center</strong></h3>
+                      </div>
                     </div>
                   </div>
-                  <p>3. Add one or more Klasify classes, separated by spaces, to the "outer" div and the "inner" divs (depending on their intended use) using the <code>class</code> attribute.</p>
-                  <div class="panel panel-default">
-                    <div class="panel-body codeBG">
-                      <code class="no-margin no-padding codeTextBG">
-                        &lt;div class="card"&gt;<br>
-                        &emsp;&lt;div class="card-image"&gt;<br>
-                        &emsp;&emsp;...<br>
-                        &emsp;&lt;/div&gt;<br>
-                        &emsp;&lt;div class="card-text"&gt;<br>
-                        &emsp;&emsp;...<br>
-                        &emsp;&lt;/div&gt;<br>
-                        &lt;/div&gt;
-                      </code>
+                  <div class="col-4">
+                    <div class="card">
+                      <div class="card-text">
+                        <h3 class="font-roboto text-left"><strong>Left</strong></h3>
+                      </div>
                     </div>
                   </div>
-                  <p> 4. Add content to each "inner" div, again depending on its intended use, using standard HTML elements and, optionally, additional Klasify classes.</p>
+                </div>
+                <div class="col-12 no-margin no-padding">
+                  <h6>Example:</h6>
                   <div class="panel panel-default">
                     <div class="panel-body codeBG">
                       <code class="no-margin no-padding codeTextBG">
                         &lt;div class="card"&gt;<br>
                         &emsp;&lt;div class="card-image" style="background-image: url('your-image-here.jpg')"&gt;<br>&emsp;&lt;/div&gt;<br>
+                        &emsp;&lt;div class="card-text"&gt;<br>
+                        &emsp;&emsp;&lt;h3 class="font-roboto text-rights"&gt;The Flash&lt;/h3&gt;<br>
                         &emsp;&lt;/div&gt;<br>
+                        &lt;/div&gt;<br>
+                      </code>
+                    </div>
+                  </div>
+                </div>
+               </div>
+            </div>
+          </div>
+          <div class="box">
+              <div class="box-header"><strong>Image Caps</strong></div>
+              <div class="box-body">
+               <div class="col-12">
+                <h6>Similar to headers and footers, cards include top and bottom image caps</h6>
+                <div class="col-12">
+                  <div class="col-4">
+                    <div class="card">
+                      <div class="card-text">
+                        <h3 class="font-roboto">Batman</h3>
+                        <span class="small">
+                          Bruce Wayne
+                          <br>
+                          Gotham City
+                        </span>
+                      </div>
+                      <div class="card-image"
+                           style="background-image: url('http://www.qqxxzx.com/images/pictures-of-batman/pictures-of-batman-5.jpg')">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="card">
+                      <div class="card-image"
+                           style="background-image: url('http://www.mdcu-comics.fr/upload/news/news_illustre_1461349628_597.jpg')">
+                      </div>
+                      <div class="card-text">
+                        <h3 class="font-roboto">Superman</h3>
+                        <span class="small">
+                          Kal-El (Clark Kent)
+                          <br>
+                          Metropolis
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="card">
+                      <div class="card-text">
+                        <h3 class="font-roboto">The Flash</h3>
+                        <span class="small">
+                          Barry Allen
+                          <br>
+                          Central City
+                        </span>
+                      </div>
+                       <div class="card-image"
+                           style="background-image: url('http://media.dcentertainment.com/sites/default/files/GalleryComics_1920x1080_20160608_FLS_REBIRTH_572115f783f597.00739322.jpg')">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 no-margin no-padding">
+                  <h6>Simple card with image and text:</h6>
+                  <div class="panel panel-default">
+                    <div class="panel-body codeBG">
+                      <code class="no-margin no-padding codeTextBG">
+                        &lt;div class="card"&gt;<br>
                         &emsp;&lt;div class="card-text"&gt;<br>
                         &emsp;&emsp;&lt;h3 class="font-roboto"&gt;The Flash&lt;/h3&gt;<br>
                         &emsp;&emsp;&lt;span class="small"&gt;<br>&emsp;&emsp;&emsp;&emsp;Barry Allen<br>
                         &emsp;&emsp;&emsp;&emsp;&lt;br&gt;<br>&emsp;&emsp;&emsp;&emsp;Central City<br>
-                        &emsp;&emsp;&lt;/span&gt;<br>
+                        &emsp;&emsp;&lt;/span&gt;
                         &emsp;&lt;/div&gt;<br>
-                        &lt;/div&gt;
+                        &emsp;&lt;div class="card-image" style="background-image: url('your-image-here.jpg')"&gt;<br>&emsp;&lt;/div&gt;<br>
+                        &lt;/div&gt;<br>
                       </code>
                     </div>
                   </div>
-                  <p>The card component is ready for use.</p>
                 </div>
                </div>
             </div>
@@ -198,6 +260,5 @@
         </div>
       </main>
     </div>
-
   </body>
 </html>
