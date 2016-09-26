@@ -23,6 +23,19 @@
         background-size: contain;
       }
 
+      button.accordion {
+        transition: 0.4s;
+      }
+
+      div.panel {
+        padding: 0 18px;
+        background-color: #d3d3d3;
+        display: none;
+      }
+
+      div.panel.show {
+        display: block;
+      }
       .codeTextBG{
         background: none;
       }
@@ -44,18 +57,16 @@
       <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
         <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
           <a class="mdl-navigation__link" href="../index.html">Home</a>
-          <a class="mdl-navigation__link" href="">Accordion</a>
+          <a class="mdl-navigation__link" href="accordion.html">Accordion</a>
           <a class="mdl-navigation__link" href="alerts.html">Alerts</a>
           <a class="mdl-navigation__link" href="box.html">Box</a>
           <a class="mdl-navigation__link" href="buttons.html">Buttons</a>
           <a class="mdl-navigation__link" href="button-group.html">Button Group</a>
           <a class="mdl-navigation__link" href="cards.html">Cards</a>
           <a class="mdl-navigation__link" href="image.html">Images</a>
-          <a class="mdl-navigation__link" href="">Modal</a>
           <a class="mdl-navigation__link" href="table.html">Table</a>
           <a class="mdl-navigation__link" href="tabs.html">Tabs</a>
           <a class="mdl-navigation__link" href="typography.html">Typography</a>
-          <a class="mdl-navigation__link" href="">Validations</a>
           <a class="mdl-navigation__link" href="colors.html">Color</a>
           <a class="mdl-navigation__link" href="dashboard.html">Sample Dashboard</a>
           <a class="mdl-navigation__link" href="login.html">Login/Register Page</a>
@@ -65,20 +76,104 @@
       <main class="mdl-layout__content mdl-color--grey-100">
         <div class="mdl-grid demo-content">
           <div class="col-10 col-flex">
+
              <div class="box">
               <div class="box-header"><strong>Accordion</strong></div>
               <div class="box-body">
                 <div class="col-12">
+                  <h6 class="no-padding">Accordions are useful when you want to toggle between hiding and showing large amount of content:</h6>
+                  <button class="accordion color-white">Bruce Wayne is . . </button>
+                  <div class="panel">
+                    <div class="clear-10"></div>
+                    <p class="text-center"><strong>Batman</strong></p>
+                  </div>
+                  <div class="clear-10"></div>
+                  <button class="accordion color-white">Clark Kent is . . </button>
+                  <div class="panel">
+                    <div class="clear-10"></div>
+                    <p class="text-center"><strong>Superman</strong></p>
+                  </div>
+                  <div class="clear-10"></div>
+                  <button class="accordion color-white">Hal Jordan is . .</button>
+                  <div class="panel">
+                    <div class="clear-10"></div>
+                    <p class="text-center"><strong>Green Lantern</strong></p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+
+            <div class="box">
+              <div class="box-header"><strong>HTML</strong></div>
+              <div class="box-body">
+                <div class="col-12">
+                  <h5 class="no-padding no-margin">Example:</h5>
+                  <div class="box codeBG">
+                    <div class="box-body codeBG">
+                      <div class="col-12">
+                        <code class="no-margin no-padding codeTextBG">
+                          &lt;button class="accordion&gt; Accordion Button &lt;/button&gt;<br>
+                          &emsp;&lt;div class="panel&gt;<br>
+                          &emsp;&emsp;Lorem Ipsum . . .<br>
+                          &emsp;&lt;/div&gt;<br>
+                          &lt;button class="accordion&gt; Accordion Button &lt;/button&gt;<br>
+                          &emsp;&lt;div class="panel&gt;<br>
+                          &emsp;&emsp;Lorem Ipsum . . .<br>
+                          &emsp;&lt;/div&gt;<br>
+                          &lt;button class="accordion&gt; Accordion Button &lt;/button&gt;<br>
+                          &emsp;&lt;div class="panel&gt;<br>
+                          &emsp;&emsp;Lorem Ipsum . . .<br>
+                          &emsp;&lt;/div&gt;<br>
+                        </code>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="box-header"><strong>Javascript</strong></div>
+              <div class="box-body">
+                <div class="col-12">
+                  <div class="box codeBG">
+                    <div class="box-body codeBG">
+                      <div class="col-12">
+                        <code class="no-margin no-padding codeTextBG">
+                          var acc = document.getElementByClassName("accordion");<br>
+                          var item;<br><br>
+                          for(item = 0; item < acc.length; item++){<br>
+                          &emsp;acc[item].onclick = function(){<br>
+                          &emsp;&emsp;this.classList.toggle("active");<br>
+                          &emsp;&emsp;this.nextElementSibling.classList.toggle("show");<br>
+                          &emsp;}
+                          <br>}
+                        </code>
+                      </div>
+                    </div>
+                  </div>
 
                 </div>
               </div>
             </div>
+
+
           </div>
         </div>
       </main>
 
     </div>
+    <script type="text/javascript">
+      var acc = document.getElementsByClassName("accordion");
+      var i;
 
+      for (i = 0; i < acc.length; i++) {
+          acc[i].onclick = function(){
+              this.classList.toggle("active");
+              this.nextElementSibling.classList.toggle("show");
+          }
+      }
+    </script>
   </body>
 </html>
