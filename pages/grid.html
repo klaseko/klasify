@@ -1,5 +1,5 @@
 <html>
-  <head>
+<head>
     <title>Klasify</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -82,6 +82,10 @@
         text-align: center;
       }
 
+      .borderOutline{
+        border-style: ridge;
+      }
+
 
     </style>
   </head>
@@ -90,6 +94,7 @@
   <div id="nav">
       <div id="logo"></div>
   </div>
+
   <div id="sidebar">
     <div class="clear-20"></div>
     <ol class="color-white removeListNumber">
@@ -126,9 +131,8 @@
       </li>
       <li>
         <a href="buttons.html" class="color-white">
-          <font color="#2ABBB3"><i class="fa fa-th-large" aria-hidden="true"></i>
+          <i class="fa fa-th-large" aria-hidden="true"></i>
           &nbsp;&nbsp;&nbsp;Buttons
-          </font>
         </a>
       </li>
       <li>
@@ -167,108 +171,134 @@
           &nbsp;&nbsp;&nbsp;Typography
         </a>
       </li>
-       <li>
+      <li>
         <a href="grid.html" class="color-white">
-          <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+          <font color="#2ABBB3"><i class="fa fa-plus-square-o" aria-hidden="true"></i>
           &nbsp;&nbsp;&nbsp;Grid System
+          </font>
         </a>
       </li>
     </ol>
 
   </div>
-
-    <div class="main">
-
-
-      <div class="container-flex">
-          <div class="col-10 col-flex">
-           <div class="clear-50"></div>
-            <div class="box">
-              <div class="box-header"><strong>Button Styles</strong></div>
-              <div class="box-body wide">
-                <div class="col-12 wide">
-                  <p>Klasify provides four styles of buttons</p>
-
-                  <div class="container-flex">
-                    <button class="button-lime">Quas</button>
-                    <button class="button-default color-white">Wex</button>
-                    <button class="button-orange color-white">Exort</button>
-                    <button class="button-white">Invoke</button>
-                  </div>
-                  <div class="clear-20"></div>
-                  <p>To achieve the button styles above, Klasify has the following classes:</p>
-                  <ul>
-                    <li><code>.button-lime</code></li>
-                    <li><code>.button-default</code></li>
-                    <li><code>.button-orange</code></li>
-                    <li><code>.button-white</code></li>
-                  </ul>
-                  <p>The following example shows the code for the different button styles:</p>
-                  <h6 class="no-margin no-padding">EXAMPLES:</h6>
-                  <div class="panel panel-default">
-                    <div class="panel-body codeBG">
-                      <code class="no-margin no-padding codeTextBG">
-                        &lt;button class="button-lime"&gt;Quas&lt;/button&gt;<br>
-                        &lt;button class="button-default color-white"&gt;Wex&lt;/button&gt;<br>
-                        &lt;button class="button-orange color-white"&gt;Exort&lt;/button&gt;<br>
-                        &lt;button class="button-white color-white"&gt;Invoke&lt;/button&gt;<br>
-                      </code>
-                    </div>
-                  </div>
-                  <div class="clear-10"></div>
-                  <p>The button classes can be used on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element:</p>
-                  <h6 class="no-margin no-padding">EXAMPLES:</h6>
-                  <div class="panel panel-default">
-                    <div class="panel-body codeBG">
-                      <code class="no-margin no-padding codeTextBG">
-                        &lt;a href="#" class="button-lime"&gt;Link Button&lt;/a&gt;<br>
-                        &lt;button type="button" class="button-default color-white"&gt;Button&lt;/button&gt;<br>
-                        &lt;input type="button" class="button-orange color-white" value="Input Button"&gt;<br>
-                        &lt;input type="submit" class="button-orange color-white" value="Submit Button"&gt;<br>
-                      </code>
-                    </div>
-                  </div>
-                  <span>
-                    <p class="no-padding no-margin"><strong>Why do we put a # in the href attribute of the link?</strong></p>
-                    <p class="no-padding no-margin"><small>Since we do not have any page to link it to, and we do not want to get a "404" message, we put # as the link. In real life it should of course been a real URL to the "Search" page.</small></p>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="box">
-              <div class="box-header"><strong>Active/Disabled Buttons</strong></div>
-              <div class="box-body wide">
-                <div class="col-12 wide">
-                  <p>A button can be set to an active (appear pressed) or a disabled (unclickable) state:</p>
-
-                  <div class="container-flex">
-                    <button class="button-default color-white active">Active</button>
-                    <button class="button-default color-white disabled">Disabled</button>
-                  </div>
-                  <div class="clear-10"></div>
-                  <p>The class <code>.active</code> makes a button appear pressed, and the class <code>.disabled</code> makes a button unclickable:</p>
-                  <h6 class="no-margin no-padding">EXAMPLES:</h6>
-                  <div class="panel panel-default">
-                    <div class="panel-body codeBG">
-                      <code class="no-margin no-padding codeTextBG">
-                        &lt;button class="button-default color-white active"&gt;Active&lt;/button&gt;<br>
-                        &lt;button class="button-default color-white disabled"&gt;Disabled&lt;/button&gt;<br>
-                      </code>
-                    </div>
-                  </div>
-
-
-                </div>
-              </div>
-            </div>
-
-
-          </div>
+  <div class="main">
+    <div class="container-flex">
+      <div class="col-10 col-flex">
+        <div class="clear-50"></div>
+        <div class="box">
+          <div class="box-body"><strong>Grid System </strong></div>
         </div>
+        <div class="box">
+          <div class="box-body wide">
+            <div class="col-12 wide">
+              <p><strong>Introduction</strong></p>
+              <p>Klasify grid system allows up to 12 columns across the page.</p>
+              <p>If you do not want to use all 12 columns individually, you can group the columns together to create wider columns:</p>
+              <div class="col-12 wide">
+                <div class="col-6 borderOutline"><h4 class="text-center font-bold no-padding no-margin">.col-6</h4></div>
+                <div class="col-6 borderOutline"><h4 class="text-center font-bold no-padding no-margin">.col-6</h4></div>
+              </div>
+              <div class="col-12 wide">
+                <div class="col-10 borderOutline"><h4 class="text-center font-bold no-padding no-margin">.col-10</h4></div>
+                <div class="col-2 borderOutline"><h4 class="text-center font-bold no-padding no-margin">.col-2</h4></div>
+              </div>
+              <div class="col-12 wide">
+                <div class="col-8 borderOutline"><h4 class="text-center font-bold no-padding no-margin">.col-8</h4></div>
+                <div class="col-4 borderOutline"><h4 class="text-center font-bold no-padding no-margin">.col-4</h4></div>
+              </div>
+              <div class="col-12 wide">
+                <div class="col-4 borderOutline"><h4 class="text-center font-bold no-padding no-margin">.col-4</h4></div>
+                <div class="col-4 borderOutline"><h4 class="text-center font-bold no-padding no-margin">.col-4</h4></div>
+                <div class="col-4 borderOutline"><h4 class="text-center font-bold no-padding no-margin">.col-4</h4></div>
+              </div>
+              <div class="col-12 wide borderOutline">
+              <h4 class="text-center font-bold no-padding no-margin">.col-12</h4></div>
+              <div class="clear-20"></div>
+              <p>Klasify grid system is responsive, and the columns will re-arrange automatically depending on the screen size.</p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-body">
+              <div class="col-12 wide">
+                <p><strong>Basic Structure of a Klasify Grid</strong></p>
+                <p>The following is a basic structure of a Bootstrap grid:</p>
+                <div class="col-12 wide">
+                  <h5 class="no-padding no-margin">Example:</h5>
+                  <div class="panel panel-default">
+                    <div class="panel-body codeBG">
+                      <code class="no-margin no-padding codeTextBG">
+                       &lt;div class="row"&gt;<br>
+                       &emsp;&lt;div class="col-*-*"&gt;&lt;/div&gt;<br>
+                       &lt;/div&gt;<br>
+                      </code>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-body">
+              <div class="col-12 wide">
+                <p><strong>Three Equal Columns</strong></p>
+                <div class="col-12 wide col-flex">
+                  <div class="col-4 borderOutline"><h4 class="text-center font-bold no-padding no-margin">.col-4</h4></div>
+                  <div class="col-4 borderOutline"><h4 class="text-center font-bold no-padding no-margin">.col-4</h4></div>
+                  <div class="col-4 borderOutline"><h4 class="text-center font-bold no-padding no-margin">.col-4</h4></div>
+                </div>
+                <p><br>The following example shows how to get a three equal-width columns starting at tablets and scaling to large desktops. On mobile phones, the columns will automatically stack:</p>
+                <div class="col-12 wide">
+                  <h5 class="no-padding no-margin">Example:</h5>
+                  <div class="panel panel-default">
+                    <div class="panel-body codeBG">
+                      <code class="no-margin no-padding codeTextBG">
+                       &lt;div class="row"&gt;<br>
+                       &emsp;&lt;div class="col-4"&gt;&lt;/div&gt;<br>
+                       &emsp;&lt;div class="col-4"&gt;&lt;/div&gt;<br>
+                       &emsp;&lt;div class="col-4"&gt;&lt;/div&gt;<br>
+                       &lt;/div&gt;<br>
+                      </code>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="box-body">
+              <div class="col-12 wide">
+                <p><strong>Two Unequal Equal Columns</strong></p>
+                <div class="col-12 wide col-flex">
+                  <div class="col-8 borderOutline"><h4 class="text-center font-bold no-padding no-margin">.col-8</h4></div>
+                  <div class="col-4 borderOutline"><h4 class="text-center font-bold no-padding no-margin">.col-4</h4></div>
+                </div>
+                <p><br>The following example shows how to get two various-width columns starting at tablets and scaling to large desktops:</p>
+                <div class="col-12 wide">
+                  <h5 class="no-padding no-margin">Example:</h5>
+                  <div class="panel panel-default">
+                    <div class="panel-body codeBG">
+                      <code class="no-margin no-padding codeTextBG">
+                       &lt;div class="row"&gt;<br>
+                       &emsp;&lt;div class="col-8"&gt;&lt;/div&gt;<br>
+                       &emsp;&lt;div class="col-4"&gt;&lt;/div&gt;<br>
+                       &lt;/div&gt;<br>
+                      </code>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
         <div class="clear-50"></div>
         <p class="trademark">All Rights Reserve © Klaseko Web Enrollments 2016</p>
         <div class="clear-50"></div>
-      </div>
     </div>
+  </div>
+
   </body>
 </html>
