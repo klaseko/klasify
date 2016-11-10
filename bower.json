@@ -1,6 +1,6 @@
 {
   "name": "klasify",
-  "version": "0.0.1",
+  "version": "0.4.8",
   "authors": [
     {
       "name": "Francis Borbe",
@@ -23,8 +23,8 @@
   "devDependencies": {},
   "license": "MIT",
   "main": [
-    "stylesheet/klasify.css",
-    "js/klasify.js"
+    "./sass/klasify.scss",
+    "./js/klasify.js"
   ],
   "ignore": [
     "**/.*",
