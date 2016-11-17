@@ -1,5 +1,5 @@
 /* Roboto */
-@import "https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i";
+@import "https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i";
 /* Settings */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /* line 9, ../sass/settings/_normalize.scss */
@@ -1456,7 +1456,6 @@ label.error {
   width: calc(15% - 14px);
   height: 34px;
   float: left;
-  background-image: url("../images/klaseko-logo.png");
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1471,22 +1470,22 @@ label.error {
     width: 41px;
   }
 }
-/* line 29, ../sass/components/_nav.scss */
+/* line 28, ../sass/components/_nav.scss */
 #nav .login {
   border-right: 0 !important;
 }
-/* line 33, ../sass/components/_nav.scss */
+/* line 32, ../sass/components/_nav.scss */
 #nav #user {
   width: calc(15% - 100px);
   padding: 18px 17px 16px;
   float: left;
 }
-/* line 39, ../sass/components/_nav.scss */
+/* line 38, ../sass/components/_nav.scss */
 #nav .show-border-shadow {
   border-bottom: 1px solid gainsboro;
   box-shadow: 3px 3px 3px rgba(35, 35, 35, 0.05);
 }
-/* line 44, ../sass/components/_nav.scss */
+/* line 43, ../sass/components/_nav.scss */
 #nav .hide-border-shadow {
   border-bottom: none;
   box-shadow: none;
@@ -1570,6 +1569,11 @@ label.error {
   overflow-y: auto;
   height: auto;
   margin-bottom: 2%;
+}
+
+/* line 8, ../sass/components/_table.scss */
+.row-container:nth-child(odd) {
+  background: #fafafa;
 }
 
 /* line 2, ../sass/components/_tabs.scss */
