@@ -6,12 +6,9 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/klasify.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/font.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/materialicons.min.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/material.min.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" ></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/materialite.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="favicon.ico"/>
     <style>
       .banner {
@@ -44,157 +41,283 @@
           width: 100%;
           padding-left: 50px;
       }
-      .wide input {
-          width: 100%;
+      .wide {
+          width: 100% !important;
+      }
+
+      .bgColor{
+        background-color: #F0F0F0;
+      }
+
+      .sidebar{
+        position:absolute;
+        left:0;
+        top:92px;
+        bottom: 0;
+        width: 150x;
+      }
+
+      .main{
+        position: absolute;
+        left:150px;
+        top:20px;
+        right:0;
+        bottom:0;
+      }
+
+      @media screen and (max-width: 1000px) {
+        .main{
+          position: absolute;
+          left:0px;
+          top:20px;
+          right:0;
+          bottom:0;
+        }
+      }
+
+      .removeListNumber {
+        list-style: none;
+      }
+
+      a, u {
+        text-decoration: none !important;
+      }
+
+      a:hover {
+        color: #2ABBB3 !important;
+        text-decoration: none;
+        font-weight: none
+      }
+
+      .active{
+        color: #2ABBB3 !important;
+      }
+
+      .trademark{
+        text-align: center;
       }
 
     </style>
   </head>
-  <body>
 
-    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-      <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
-        <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title"><strong>KLASIFY</strong></span>
-          <div class="mdl-layout-spacer"></div>
-        </div>
-      </header>
-      <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
-        <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
-          <a class="mdl-navigation__link" href="index.html">Home</a>
-          <a class="mdl-navigation__link" href="pages/accordion.html">Accordion</a>
-          <a class="mdl-navigation__link" href="pages/alerts.html">Alerts</a>
-          <a class="mdl-navigation__link" href="pages/box.html">Box</a>
-          <a class="mdl-navigation__link" href="pages/buttons.html">Buttons</a>
-          <a class="mdl-navigation__link" href="pages/button-group.html">Button Group</a>
-          <a class="mdl-navigation__link" href="pages/cards.html">Cards</a>
-          <a class="mdl-navigation__link" href="pages/image.html">Images</a>
-          <a class="mdl-navigation__link" href="pages/table.html">Table</a>
-          <a class="mdl-navigation__link" href="pages/tabs.html">Tabs</a>
-          <a class="mdl-navigation__link" href="pages/typography.html">Typography</a>
-          <a class="mdl-navigation__link" href="pages/colors.html">Color</a>
-          <a class="mdl-navigation__link" href="pages/dashboard.html">Sample Dashboard</a>
-          <a class="mdl-navigation__link" href="pages/login.html">Login/Register Page</a>
-        </nav>
-      </div>
+ <body class="bgColor">
 
-      <main class="mdl-layout__content mdl-color--grey-100">
-        <div class="mdl-grid demo-content">
-          <div class="col-10 col-flex">
-            <div class="box">
-              <div class="box-header"><h3 class="no-padding no-margin"><strong>Getting Started</strong></h3></div>
-            </div>
+ <div id="nav">
+    <div id="logo"></div>
+ </div>
 
-            <div class="box">
-              <div class="box-header"><h4 class="no-padding no-margin"><strong>Install via Bower</strong></h4></div>
-              <div class="box-body">
+  <div id="sidebar">
+    <div class="clear-20"></div>
+    <ol class="color-white removeListNumber">
+      <li><strong>COMPONENTS</strong></li>
+      <li>
+        <a href="index.html" class="color-white">
+          <font color="#2ABBB3"><i class="fa fa-tachometer" aria-hidden="true"></i>
+          &nbsp;&nbsp;&nbsp;Home
+          </font>
+        </a>
+      </li>
+      <li>
+        <a href="pages/accordion.html" class="color-white">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+          &nbsp;&nbsp;&nbsp;Accordion
+        </a>
+      </li>
+      <li>
+        <a href="pages/alerts.html" class="color-white">
+          <i class="fa fa-exclamation" aria-hidden="true"></i>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alerts
+        </a>
+      </li>
+      <li>
+        <a href="pages/box.html" class="color-white">
+          <i class="fa fa-square" aria-hidden="true"></i>
+          &nbsp;&nbsp;&nbsp;Box
+        </a>
+      </li>
+      <li>
+        <a href="pages/button-group.html" class="color-white">
+          <i class="fa fa-th" aria-hidden="true"></i>
+          &nbsp;&nbsp;Button-Groups
+        </a>
+      </li>
+      <li>
+        <a href="pages/buttons.html" class="color-white">
+          <i class="fa fa-th-large" aria-hidden="true"></i>
+          &nbsp;&nbsp;&nbsp;Buttons
+        </a>
+      </li>
+      <li>
+        <a href="pages/cards.html" class="color-white">
+          <i class="fa fa-clone" aria-hidden="true"></i>
+          &nbsp;&nbsp;&nbsp;Cards
+        </a>
+      </li>
+      <li>
+        <a href="pages/colors.html" class="color-white">
+          <i class="fa fa-paint-brush" aria-hidden="true"></i>
+          &nbsp;&nbsp;&nbsp;Colors
+        </a>
+      </li>
+      <li>
+        <a href="pages/image.html" class="color-white">
+          <i class="fa fa-picture-o" aria-hidden="true"></i>
+          &nbsp;&nbsp;&nbsp;Image
+        </a>
+      </li>
+      <li>
+        <a href="pages/table.html" class="color-white">
+          <i class="fa fa-table" aria-hidden="true"></i>
+          &nbsp;&nbsp;&nbsp;Table
+        </a>
+      </li>
+      <li>
+        <a href="pages/tabs.html" class="color-white">
+          <i class="fa fa-list" aria-hidden="true"></i>
+          &nbsp;&nbsp;&nbsp;Tabs
+        </a>
+      </li>
+      <li>
+        <a href="pages/typography.html" class="color-white">
+          <i class="fa fa-font" aria-hidden="true"></i>
+          &nbsp;&nbsp;&nbsp;Typography
+        </a>
+      </li>
+      <li>
+        <a href="pages/grid.html" class="color-white">
+          <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+          &nbsp;&nbsp;&nbsp;Grid System
+        </a>
+      </li>
+    </ol>
+
+  </div>
+  <div class="main">
+  <div class="clear-50"></div>
+
+
+
+  <div class="container-flex">
+    <div class="col-10 col-flex">
+    <div class="box">
+      <div class="box-body"><strong>Getting Started</strong></div>
+    </div>
+
+    <div class="box">
+        <div class="box-header"><h4 class="no-padding no-margin"><strong>Install via HTML</strong></h4></div>
+        <div class="box-body wide">
+          <div class="col-12 full-width no-padding">
+            <div class="panel panel-default">
+              <div class="panel-body codeBG full-width">
                 <div class="col-12">
-                  <div class="text-left">
-                   <h6>Bower is a command line utility. Install it with npm.</h6>
-                  </div>
-
-
-                  <div class="panel panel-default">
-                    <div class="panel-body codeBG">
-                      <div class="col-12">
-                        <div class="text-left">
-                          <h5 class="no-margin no-padding"><strong>$ npm install -g bower</strong></h5>
+                  <div class="text-center">
+                  <h4 class="no-padding no-margin"><strong>Complete CSS</strong></h4>
+                    <div class="wrapper">
+                      <div class="row">
+                        <div class="col wide">
+                          <input type="text" class="text" value="https://bowercdn.net/c/klasify-0.4.4/stylesheets/klasify.css"/>
+                        </div>
+                        <div class="col">
+                          <button class="color-white btn" data-toggle="tooltip" data-placement="top" title="Copy to Clipboard">Copy!</button>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="text-left">
-                   <h6>Bower requires <a href="https://nodejs.org/en/" target="_blank">node, npm</a> and <a href="https://git-scm.com/" target="_blank">git</a>.</h6>
-                   <h4>Install Klasify Package</h4>
-                  </div>
-
-                  <div class="panel panel-default">
-                    <div class="panel-body codeBG">
-                      <div class="col-12">
-                        <div class="text-left">
-                          <h5 class="no-margin no-padding"><strong>$ bower install Klasify --save</strong></h5>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <h5 class="no-padding no-margin">Example:</h5>
-                  <div class="panel panel-default">
-                    <div class="panel-body codeBG">
-                      <code class="no-margin no-padding codeTextBG">
-                        &lt;!-- install bower --&gt;<br>
-                        $ npm install -g bower<br>
-                        &lt;!-- install Klasify Package --&gt;<br>
-                        $ bower install Klasify --save<br>
-                      </code>
-                    </div>
-                  </div>
-
                 </div>
               </div>
             </div>
-
-            <div class="box">
-              <div class="box-header"><h4 class="no-padding no-margin"><strong>Install via HTML</strong></h4></div>
-              <div class="box-body">
-                <div class="col-12">
-                  <div class="panel panel-default">
-                    <div class="panel-body codeBG">
-                      <div class="col-12">
-                        <div class="text-center">
-                        <h4 class="no-padding no-margin"><strong>Complete CSS</strong></h4>
-                          <div class="wrapper">
-                            <div class="row">
-                              <div class="col wide">
-                                <input type="text" class="text" value="https://bowercdn.net/c/klasify-0.4.4/stylesheets/klasify.css"/>
-                              </div>
-                              <div class="col">
-                                <button class="color-white btn" data-toggle="tooltip" data-placement="top" title="Copy to Clipboard">Copy!</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            </div>
-
-
 
           </div>
         </div>
-      </main>
+      </div>
+
+      <div class="box">
+        <div class="box-header"><h4 class="no-padding no-margin"><strong>Install via Bower</strong></h4></div>
+        <div class="box-body wide">
+          <div class="col-12 wide">
+            <div class="text-left">
+             <h6>Bower is a command line utility. Install it with npm.</h6>
+            </div>
+
+
+            <div class="panel panel-default full-width">
+              <div class="panel-body codeBG">
+                <div class="col-12 wide">
+                  <div class="text-left">
+                    <h5 class="no-margin no-padding"><strong><code class="no-margin no-padding codeTextBG">$ npm install -g bower</code></strong></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-left">
+             <h6>Bower requires <a href="https://nodejs.org/en/" target="_blank">node, npm</a> and <a href="https://git-scm.com/" target="_blank">git</a>.</h6>
+             <h4>Install Klasify Package</h4>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-body codeBG">
+                <div class="col-12">
+                  <div class="text-left">
+                    <h5 class="no-margin no-padding"><strong><code class="no-margin no-padding codeTextBG">$ bower install klasify --save</code></strong></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <h5 class="no-padding no-margin">Example:</h5>
+            <div class="panel panel-default">
+              <div class="panel-body codeBG">
+                <code class="no-margin no-padding codeTextBG">
+                  &lt;!-- install bower --&gt;<br>
+                  $ npm install -g bower<br>
+                  &lt;!-- install klasify Package --&gt;<br>
+                  $ bower install klasify --save<br>
+                </code>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+  <div class="clear-50"></div>
+  <p class="trademark">All Rights Reserve © Klaseko Web Enrollments 2016</p>
+  <div class="clear-100"></div>
+</div>
+</div>
 
-
-    <script type="text/javascript">
-      (function () {
-        window.onload = function () {
-          var copy_btn;
-          copy_btn = document.querySelector('.btn');
-          return copy_btn.addEventListener('click', function (event) {
-            var err, msg, successful, text;
-            text = document.querySelector('.text');
-            text.select();
-            try {
-              successful = document.execCommand('copy');
-              msg = successful ? 'successful' : 'unsuccessful';
-              return console.log('Copy command was ' + msg);
-            } catch (_error) {
-              err = _error;
-              return console.log('Oops, unable to copy');
-            }
-          });
-        };
-      }.call(this));
-
-      $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();
+<script type="text/javascript">
+  (function () {
+    window.onload = function () {
+      var copy_btn;
+      copy_btn = document.querySelector('.btn');
+      return copy_btn.addEventListener('click', function (event) {
+        var err, msg, successful, text;
+        text = document.querySelector('.text');
+        text.select();
+        try {
+          successful = document.execCommand('copy');
+          msg = successful ? 'successful' : 'unsuccessful';
+          return console.log('Copy command was ' + msg);
+        } catch (_error) {
+          err = _error;
+          return console.log('Oops, unable to copy');
+        }
       });
-    </script>
+    };
+  }.call(this));
+
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+</script>
+
+
+
+
+
+
   </body>
 </html>
