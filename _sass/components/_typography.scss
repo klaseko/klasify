@@ -1,0 +1,77 @@
+/* Fonts Styles */
+.font-roboto {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.instructions {
+  font-size: 18px !important;
+  font-weight: 300;
+}
+
+.lead {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-size:18px;
+  font-weight: 300;
+}
+
+.code {
+  font-family: 'Source Code Pro', 'Consolas';
+  font-size: 12px;
+  background: #3f454c;
+  padding: 5px;
+  color: #eeeeec;
+  border-radius: 7px;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.font-thin {
+  font-weight: 100 !important;
+}
+
+.font-light {
+  font-weight: 300 !important;
+}
+
+.font-medium {
+  font-weight: 500 !important;
+}
+
+.font-bold {
+  font-weight: 900 !important;
+}
+
+.text-small {
+  font-size: .9em !important;
+}
+
+.ellipsis-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

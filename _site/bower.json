@@ -1,0 +1,36 @@
+{
+  "name": "klasify",
+  "version": "0.4.9",
+  "authors": [
+    {
+      "name": "Francis Borbe",
+      "email": "borbefg@gmail.com"
+    },
+    {
+      "name": "Gerard Cruz",
+      "email": "gerardcruz@live.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/klaseko/klasify.git"
+  },
+  "keywords": [],
+  "homepage": "",
+  "dependencies": {
+    "font-awesome": "^4.6.3"
+  },
+  "devDependencies": {},
+  "license": "MIT",
+  "main": [
+    "./sass/klasify.scss",
+    "./js/klasify.js"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

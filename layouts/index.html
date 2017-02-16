@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="row bg-corporate-blue">
+  <div class="container-flex">
+    <div class="col-10 col-flex">
+      <div class="col-12">
+        <div class="clear-10"></div>
+        <h2 class="color-white jumbo">
+          Layouting & Grid System
+        </h2>
+        <div class="clear-10"></div>
+        <p class="color-white">Simple mobile responsive grid system</p>
+        <div class="clear-10"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-12">
+  <div class="container-flex">
+    <div class="col-10 col-flex">
+      {% include_relative grid-system.html %}
+
+      {%include personal-space-50.html %}
+
+      {% include_relative grid-helpers.html %}
+    </div><!-- .col-10 -->
+  </div><!-- .container-flex -->
+</div>

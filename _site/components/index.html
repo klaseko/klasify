@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Klasify | CSS framework for the Klaseko Platform</title>
+  <!-- <meta name="description" content="This is the CSS framework for the Klaseko Platform"> -->
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- <link rel="canonical" href="http://localhost:4000/components/"> -->
+  <!-- <link rel="alternate" type="application/rss+xml" title="Klasify | CSS framework for the Klaseko Platform" href="/feed.xml"> -->
+
+  <!--  -->
+</head>
+
+
+  <body>
+
+    <nav id="nav">
+  <div class="container-flex no-padding">
+    <div class="col-10 col-flex no-padding">
+      <h3 class="col-7">
+        <a href="/" style="text-decoration: none">Klasify</a>
+      </h3>
+      <div class="col-1 desktop-only">
+        <label class="text-right">
+          <a href="/layouts">Layouts</a>
+        </label>
+      </div>
+      <div class="col-2 desktop-only">
+        <label class="text-right">
+          <a href="/components">Components</a>
+        </label>
+      </div>
+      <div class="col-2 desktop-only no-padding-left">
+        <label class="text-right">
+          <a href="/typography">Typography</a>
+        </label>
+      </div><!--
+      <div class="col-1 desktop-only">
+        <label class="text-right">
+          <a href="helpers.html">Helpers</a>
+        </label>
+      </div> -->
+    </div>
+  </div>
+</nav>
+
+
+    <div class="row" id="content">
+      <div class="row bg-corporate-blue">
+  <div class="container-flex">
+    <div class="col-10 col-flex">
+      <div class="col-12">
+        <div class="clear-10"></div>
+        <h2 class="color-white jumbo">
+          Components
+        </h2>
+        <div class="clear-10"></div>
+        <p class="color-white">Components are reusable UI elements that follow a certain design language. </p>
+        <div class="clear-10"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-12">
+  <div class="container-flex">
+    <div class="col-10 col-flex">
+      <div id="alerts" class="clear-50" style="margin-top: -50px;"></div>
+<div class="clear-10"></div>
+<h3>
+  Alerts
+  <small>
+    <a href="#alerts" class="small"><i class="fa fa-chain"></i></a>
+  </small>
+</h3>
+<p>Klasify provides an easy way to create predefined alert messages</p>
+
+<div class="clear-10"></div>
+
+<label>Warning</label>
+<div class="col-6">
+  <code>
+    &lt;p class="<span class="color-orange">warning</span>"&gt;<br>
+      &emsp;&emsp;&lt;strong&gt;Warning!&lt;/strong&gt;
+      The odds are against you.<br>
+    &lt;/p&gt;<br>
+  </code>
+</div>
+<div class="col-6">
+  <div class="box no-margin">
+    <div class="box-body">
+      <p class="warning no-margin">
+        <strong>Warning!</strong> The odds are against you.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="clear-10"></div>
+
+<label>Error</label>
+<div class="col-6">
+  <code>
+    &lt;p class="<span class="color-orange">error</span>"&gt;<br>
+      &emsp;&emsp;&lt;strong&gt;Oh no!&lt;/strong&gt;
+      I think something went wrong<br>
+    &lt;/p&gt;<br>
+  </code>
+</div>
+<div class="col-6">
+  <div class="box no-margin">
+    <div class="box-body">
+      <p class="error no-margin">
+        <strong>Oh no!</strong> I think something went wrong
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="clear-10"></div>
+
+<label>Success</label>
+<div class="col-6">
+  <code>
+    &lt;p class="<span class="color-orange">success</span>"&gt;<br>
+      &emsp;&emsp;&lt;strong&gt;Our victory assured.&lt;/strong&gt;
+      This one's in the bag!<br>
+    &lt;/p&gt;<br>
+  </code>
+</div>
+<div class="col-6">
+  <div class="box no-margin">
+    <div class="box-body">
+      <p class="success no-margin">
+        <strong>Our victory assured.</strong> This one's in the bag!
+      </p>
+    </div>
+  </div>
+</div>
+
+
+      <div class="clear-50"></div>
+      <div class="clear-line"></div>
+
+      <div id="box" class="clear-50"></div>
+<div class="clear-10"></div>
+
+<h3>
+  Box
+  <small>
+    <a href="#box" class="small"><i class="fa fa-chain"></i></a>
+  </small>
+</h3>
+<p>
+  A box is a bordered element with some padding around its content. It is similar to a card.
+</p>
+
+<div class="col-12">
+  <code>
+    &lt;div class="<span class="color-orange">box</span>"&gt;<br>
+    &nbsp;&nbsp;&lt;div class="<span class="color-orange">box-header</span>"&gt;Basic Box&lt;/div&gt;<br>
+    &nbsp;&nbsp;&lt;div class="<span class="color-orange">box-body</span>"&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;
+      Hello there! My name is Box
+    &lt;/p&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;
+      You can put all sorts of things here like images, columns, buttons, and more.
+    &lt;/p&gt;<br>
+    &nbsp;&nbsp;&lt;/div&gt;<br>
+    &nbsp;&nbsp;&lt;div class="<span class="color-orange">box-footer</span>"&gt;Box Feet&lt;/div&gt;<br>
+    &lt;/div&gt;
+  </code>
+
+  <div class="clear-10"></div>
+  <label>Result</label>
+
+  <div class="box">
+    <div class="box-header">
+      Basic Box
+    </div>
+    <div class="box-body">
+      <p>Hello there! My name is Box</p>
+      <p>You can put all sorts of things here like images, columns, buttons, and more.</p>
+    </div>
+    <div class="box-footer">
+      Box Feet
+    </div>
+  </div>
+</div>
+
+
+
+
+      <div class="clear-50"></div>
+      <div class="clear-line"></div>
+
+      <div id="buttons" class="clear-50"></div>
+<div class="clear-10"></div>
+<h3>
+  Buttons
+  <small>
+    <a href="#buttons" class="small"><i class="fa fa-chain"></i></a>
+  </small>
+</h3>
+<p>Klasify provides four styles of buttons</p>
+
+<div class="col-3">
+  <button class="full-width">Quas</button>
+  <code>
+    &lt;button&gt; Quas &lt;/button&gt;
+  </code>
+</div>
+<div class="col-3">
+  <button class="full-width button-lime">Wex</button>
+  <code>
+    &lt;button class="<span class="color-orange">button-lime</span>"&gt;
+      Wex
+    &lt;/button&gt;
+  </code>
+</div>
+<div class="col-3">
+  <button class="full-width button-orange">Exort</button>
+  <code>
+    &lt;button class="<span class="color-orange">button-orange</span>"&gt;
+      Exort
+    &lt;/button&gt;
+  </code>
+</div>
+<div class="col-3">
+  <button class="full-width button-white">Invoke</button>
+  <code>
+    &lt;button class="<span class="color-orange">button-white</span>"&gt;
+      Invoke
+    &lt;/button&gt;
+  </code>
+</div>
+
+<div class="clear-10"></div>
+
+<p>You can also set a button to active or disable it</p>
+
+<div class="clear-10"></div>
+
+<label>Active</label>
+<div class="col-6">
+  <code>
+    &lt;button class="<span class="color-orange">active</span>"&gt;I am active&lt;/button&gt;<br>
+  </code>
+</div>
+<div class="col-3">
+  <button class="active no-margin full-width">I am active</button>
+</div>
+
+<div class="clear-10"></div>
+
+<label>Disabled</label>
+<div class="col-6">
+  <code>
+    &lt;button class="<span class="color-orange">disabled</span>" disabled&gt;I am disabled&lt;/button&gt;<br>
+  </code>
+</div>
+<div class="col-3">
+  <button class="disabled no-margin full-width" disabled>I am disabled</button>
+</div>
+
+
+
+
+      <div class="clear-50"></div>
+      <div class="clear-line"></div>
+
+      <div id="card" class="clear-50"></div>
+<div class="clear-10"></div>
+<h3>
+  Card
+  <small>
+    <a href="#card" class="small"><i class="fa fa-chain"></i></a>
+  </small>
+</h3>
+<p>A card is a flexible and extensible content container. It includes options for image caps, a wide variety of content, contextual background colors, and powerful display options.</p>
+
+<div class="clear-10"></div>
+
+<label>Simple card with image and text</label>
+<div class="col-12">
+  <code>
+    &lt;div class="<span class="color-orange">card</span>"&gt;<br>
+    &nbsp;&nbsp;&lt;div class="<span class="color-orange">card-image</span>" style="background-image: url('flash.jpg')"&gt;&lt;/div&gt;<br>
+    &nbsp;&nbsp;&lt;div class="<span class="color-orange">card-text</span>"&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;The Flash&lt;/h3&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Barry Allen&lt;/p&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="small"&gt;Central City&lt;/p&gt;<br>
+    &nbsp;&nbsp;&lt;/div&gt;<br>
+    &lt;/div&gt;<br>
+  </code>
+</div>
+
+<div class="clear-10"></div>
+
+<div class="col-4">
+  <div class="card">
+    <div class="card-image"
+         style="background-image: url('http://i.onionstatic.com/avclub/5315/92/16x9/960.jpg')">
+    </div>
+    <div class="card-text">
+      <h3>Robin</h3>
+      <p>Damian Wayne</p>
+      <p class="small">Gotham City</p>
+    </div>
+  </div>
+</div>
+<div class="col-4">
+  <div class="card">
+    <div class="card-image"
+         style="background-image: url('http://media.comicbook.com/2016/03/dc-comics-man-of-steel-2712377-1920x1200-970x545-176188.jpg')">
+    </div>
+    <div class="card-text">
+      <h3>Superman</h3>
+      <p>Kal-El (Clark Kent)</p>
+      <p class="small">Metropolis</p>
+    </div>
+  </div>
+</div>
+<div class="col-4">
+  <div class="card">
+    <div class="card-image"
+         style="background-image: url('http://media.dcentertainment.com/sites/default/files/GalleryComics_1920x1080_20160608_FLS_REBIRTH_572115f783f597.00739322.jpg')">
+    </div>
+    <div class="card-text">
+      <h3>The Flash</h3>
+      <p>Barry Allen</p>
+      <p class="small">Central City</p>
+    </div>
+  </div>
+</div>
+
+<div class="clear-50"></div>
+
+<p>Similar to headers and footers, cards include top and bottom image caps</p>
+<div class="col-8">
+  <label>Card component with the image at the footer/bottom</label>
+  <code>
+    &lt;div class="<span class="color-orange">card</span>"&gt;<br>
+    &nbsp;&nbsp;&lt;div class="<span class="color-orange">card-text</span>"&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Superman&lt;/h3&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Kal-El (Clark Kent)&lt;/p&gt;<br>
+    &nbsp;&nbsp;&lt;/div&gt;<br>
+    &nbsp;&nbsp;&lt;div class="<span class="color-orange">card-image</span>" style="background-image: url('superman.jpg')"&gt;&lt;/div&gt;<br>
+    &lt;/div&gt;<br>
+  </code>
+  <div class="clear-10"></div>
+  <p class="small">The order of card-text and card-image determines where the image will be.</p>
+</div>
+<div class="col-4">
+  <div class="card">
+    <div class="card-text">
+      <h3 class="font-roboto">Superman</h3>
+      <p>Kal-El (Clark Kent)</p>
+    </div>
+    <div class="card-image"
+         style="background-image: url('http://www.mdcu-comics.fr/upload/news/news_illustre_1461349628_597.jpg')">
+    </div>
+  </div>
+</div>
+
+
+    </div><!-- .col-10 -->
+  </div><!-- .container-flex -->
+</div>
+
+    </div>
+
+    <div class="clear-line"></div>
+<div id="footer" class="row">
+  <div class="clear-20"></div>
+  <div class="row">
+    <div class="container-flex">
+      <div class="col-10 col-flex">
+        <h6 class="small text-center font-medium">Proudly made by the the Klassy guys at Klaseko</h6>
+        <div class="clear-10"></div>
+        <p class="small text-center">
+          We are a small team of developers that built
+          <a href="//klaseko.com/products" target="_blank">
+            Klaseko Enroll & Pay
+          </a><br>
+        </p>
+        <div class="clear-10"></div>
+        <p class="text-center color-white no-margin">
+          <small>
+            Copyright 2016. <a href="//klaseko.com">Klaseko Web Enrollment</a>, Inc. <br class="mobile-only" />
+            All rights reserved. Stay Klassy<a class="small" href="https://s-media-cache-ak0.pinimg.com/564x/33/24/52/3324520c01f0c498ce7103b8edc0b19c.jpg" target="_blank">!</a>
+          </small>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="clear-20"></div>
+</div>
+
+  </body>
+</html>

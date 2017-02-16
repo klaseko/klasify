@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<div class="row bg-corporate-blue">
+  <div class="container-flex">
+    <div class="col-10 col-flex">
+      <div class="col-12">
+        <div class="clear-10"></div>
+        <h2 class="color-white jumbo">
+          Components
+        </h2>
+        <div class="clear-10"></div>
+        <p class="color-white">Components are reusable UI elements that follow a certain design language. </p>
+        <div class="clear-10"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-12">
+  <div class="container-flex">
+    <div class="col-10 col-flex">
+      {% include_relative alerts.html %}
+
+      <div class="clear-50"></div>
+      <div class="clear-line"></div>
+
+      {% include_relative box.html %}
+
+      <div class="clear-50"></div>
+      <div class="clear-line"></div>
+
+      {% include_relative buttons.html %}
+
+      <div class="clear-50"></div>
+      <div class="clear-line"></div>
+
+      {% include_relative card.html %}
+
+    </div><!-- .col-10 -->
+  </div><!-- .container-flex -->
+</div>

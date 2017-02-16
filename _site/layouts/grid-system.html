@@ -1,0 +1,35 @@
+<div class="clear-10"></div>
+<h3>Grid System</h3>
+<p>The grid system is comprised of 12 columns that span the width of the page. You can create columns that span a fraction of the 12 columns for your layouts.</p>
+
+<div class="clear-20"></div>
+
+<label>Basic structure of the grid</label>
+<div class="col-12">
+  <code>
+    &lt;div class="row"&gt;<br>
+    &nbsp;&nbsp;&lt;div class="<span class="color-orange">col-n</span>"&gt;&lt;/div&gt;<br>
+    &nbsp;&nbsp;&lt;div class="<span class="color-orange">col-n</span>"&gt;&lt;/div&gt;<br>
+    &nbsp;&nbsp;...<br>
+    &nbsp;&nbsp;&lt;div class="<span class="color-orange">col-n</span>"&gt;&lt;/div&gt;<br>
+    &lt;/div&gt;<br>
+  </code>
+  <div class="clear-20"></div>
+  <p>Where the sum of <strong><em>n</em></strong> must be less than or equal to 12</p>
+</div>
+
+<div class="clear-20"></div>
+
+{% include_relative 1-12.html %}
+
+<div class="clear-10"></div>
+
+{% include_relative 6-2.html %}
+
+<div class="clear-10"></div>
+
+{% include_relative 4-3.html %}
+
+<div class="clear-10"></div>
+
+{% include_relative uneven-columns.html %}
